@@ -1,0 +1,18 @@
+@import '../../variables';
+
+.__nav {
+   height: 3.286rem;
+   transition: $transition;
+
+   .__container {
+      .__nav-toggle-icon {
+         background-image: none !important;
+      }
+
+      .page_name {
+         color: $primary-1;
+         font-size: 1.1rem;
+         font-family: $font;
+      }
+   }
+}

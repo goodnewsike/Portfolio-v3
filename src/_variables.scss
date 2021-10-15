@@ -1,0 +1,87 @@
+/*=========== Fonts ==============*/
+@font-face {
+   font-family: 'OpenSans';
+   font-style: normal;
+   font-weight: 300;
+   src: url('./_assets//fonts/OpenSans-Light.ttf');
+}
+@font-face {
+   font-family: 'OpenSans';
+   font-style: normal;
+   font-weight: 400;
+   src: url('./_assets//fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+   font-family: 'OpenSans';
+   font-style: normal;
+   font-weight: 500;
+   src: url('./_assets//fonts/OpenSans-Medium.ttf');
+}
+@font-face {
+   font-family: 'OpenSans';
+   font-style: normal;
+   font-weight: 600;
+   src: url('./_assets//fonts/OpenSans-SemiBold.ttf');
+}
+@font-face {
+   font-family: 'OpenSans';
+   font-style: normal;
+   font-weight: 700;
+   src: url('./_assets//fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+   font-family: 'OpenSans';
+   font-style: normal;
+   font-weight: 800;
+   src: url('./_assets//fonts/OpenSans-ExtraBold.ttf');
+}
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+      margin-top: 20px;
+   }
+   
+   to {
+      opacity: 1;
+      margin-top: 0;
+   }
+}
+
+@keyframes Spin {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+   .App-logo {
+      animation: Spin infinite 20s linear;
+   }
+}
+
+$fade1: fadeIn .15s ease-in;
+$max-width: 1200px;
+
+$font: "OpenSans";
+$transition: all 0.3s ease-in;
+$box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+$box-shadow-hover: 0 0 10px rgba(0, 0, 0, 0.1);
+$backdrop-filter: blur(13px);
+
+$white: #ffffff;
+$black: #000000;
+
+$primary-1: #001618;
+$primary-2: #004448;
+$primary-3: #0FF0FC;
+$primary-4: #02D6E1;
+$primary-5: #09EFFB;
+$primary-6: #59F4FC;
+$primary-7: #AAF9FD;
+
+// $background-2: linear-gradient(90deg, rgba(255, 152, 119, 0.1) 0%, rgba(245, 59, 0, 0) 100%);
+$background-1: #F53B00;

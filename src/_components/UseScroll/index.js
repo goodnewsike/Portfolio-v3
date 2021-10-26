@@ -8,13 +8,11 @@ import {useState, useEffect} from 'react';
 
 // Adapted from https://coolhead.medium.com/smooth-navbar-hide-and-show-on-scroll-using-custom-react-hooks-c29b7ad457d6
 
-export function useScroll() {
+export default function useScroll() {
    // storing this to get the scroll direction
    const [lastScrollTop, setLastScrollTop] = useState(0);
    // the offset of the document.body
-   const [bodyOffset, setBodyOffset] = useState(
-      document.body.getBoundingClientRect(),
-   );
+   const [bodyOffset, setBodyOffset] = useState(document.body.getBoundingClientRect());
    // the vertical direction
    const [scrollY, setScrollY] = useState(bodyOffset.top);
    // the horizontal direction

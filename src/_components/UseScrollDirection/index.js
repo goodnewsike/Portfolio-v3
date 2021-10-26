@@ -28,6 +28,21 @@ const UseScrollDirection = () => {
    // in usage import and call:
    // const scrollDirection = useScrollDirection()
    // then set the css properties
+
+   //============== add the following css classes in usage =================
+   // .active {
+   //    visibility: "visible",
+   //    transition: "all 0.5s"
+   //  },
+   //  .hidden {
+   //    visibility: "hidden",
+   //    transition: "all 0.5s",
+   //    transform: "translateY(-100%)"
+   //  }
+
+   // import and use as follows:
+   // const { scrollDirection } = useScroll();
+   // <nav className="Header" style={scrollDirection === "down" ? styles.active: styles.hidden}   ></nav>
 };
 
 export default UseScrollDirection;

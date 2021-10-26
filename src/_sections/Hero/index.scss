@@ -1,6 +1,143 @@
 @import '../../variables';
 
 .hero {
-   height: calc(100vh - 3.286rem);
-   // background: $primary-2;
+   height: 100vh;
+   width: 100%;
+   background: $background-1 !important;
+   overflow: hidden;
+   
+   .imgs {
+      z-index: -2;
+   }
+   
+   .__container {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $background-1 !important;
+
+      .inner {
+         .profile-img {
+            height: 12rem;
+            width: 12rem;
+            border-radius: 50%;
+            background: $primary-4;
+            border: 5px solid $primary-3;
+            overflow: hidden;
+            z-index: 200;
+            box-shadow: $box-shadow3;
+
+            img {
+               object-fit: cover;
+            }
+         }
+
+         h1 {
+            font: 600 3rem $font;
+            color: $primary-4;
+            overflow: hidden;
+            border-right: .15em solid transparent; /* The typwriter cursor */
+            white-space: nowrap;
+            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+            animation: 
+            typing 1s steps(16, end) 3s;
+            // position: relative;
+            // font: 600 3rem $font;
+            // color: $primary-4;
+            // overflow: hidden;
+            
+            // &::before {
+            //    content: '';
+            //    position: absolute;
+            //    left: 120%;
+            //    width: 120%;
+            //    height: 100%;
+            //    background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
+            //    animation: animate 2s linear forwards;
+            // }
+         }
+
+         p {
+            font: 600 1.2rem $font;
+            color: $white;
+         }
+
+         .social-links {
+            ul.links {
+               display: flex;
+               align-items: center;
+               margin-top: 1.5rem;
+               background: transparent;
+
+               li {
+                  margin: 0 .7rem;
+
+                  a {
+                     background: $primary-4;
+                     height: 2.4rem;
+                     width: 2.4rem;
+                     border-radius: 8px;
+                     box-shadow: 6px 6px 10px -1px $background-1, 
+                                 -6px -6px 10px -1px $background-4;
+                     border: 1px solid rgba(0, 0, 0, 0);
+                     transition: transform .25s;
+                     
+                     &:hover {
+                        box-shadow: inset 4px 4px 6px -1px $background-1, 
+                        inset -4px -4px 6px -1px $background-4,
+                                    -0.5px -0.5px 0px $black,
+                                    0.5px 0.5px 0px $background-1,
+                                    0px 12px 10px -10px $background-5;
+                        border: 1px solid rgba(0, 0, 0, 0.1);
+                        transform: translateY(-2px);
+                     }
+
+                     .social-icon {
+                        color: #777;
+                        transform: scale(1.3);
+                        transition: transform .4s;
+                     }
+                     
+                     &:hover .social-icon {
+                        transform: scale(1.2);
+                     }
+
+                     &:hover .github {
+                        color: #171515;
+                     }
+                     &:hover .linkedin {
+                        color: #0E76A8;
+                     }
+                     &:hover .facebook {
+                        color: #3B5998;
+                     }
+                     &:hover .instagram {
+                        color: #F14843;
+                     }
+                     &:hover .twitter {
+                        color: #00ACEE;
+                     }
+                     &:hover .whatsapp {
+                        color: #4FCE5D;
+                     }
+                     &:hover .youtube {
+                        color: #F00;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+/* The typing effect */
+@keyframes typing {
+   from { width: 0 }
+   to { width: 100% }
+}
+
+@keyframes animate {
+   0% {left: -20%;}
+   100% {left: 120%;}
 }

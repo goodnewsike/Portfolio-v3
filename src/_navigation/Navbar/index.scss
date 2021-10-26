@@ -1,10 +1,44 @@
 @import '../../variables';
 
 .__nav {
-   height: 3.286rem;
-   transition: $transition;
+   position: fixed;
+   height: 5rem;
+   top: 0;
+   left: 0;
+   color: $white;
+   box-shadow: none !important;
+   background: $background-3;
+   transition: $transition2;
+   z-index: 500;
+   // margin-top: 1rem;
+   // border-radius: 3rem;
+
+   .active {
+      visibility: "visible";
+      transition: "all 0.5s";
+   }   
+   .hidden {
+      visibility: "hidden";
+      transition: "all 0.5s";
+      transform: "translateY(-100%)";
+   }
 
    .__container {
+      .__nav-brand {
+         color: $white;
+         border: 2px solid $primary-3;
+         border-radius: 10px;
+         height: 2.5rem;
+         width: 2.5rem;
+         transition: $transition2;
+
+         span {
+            font: 700 1.4rem $font;
+            line-height: 1;
+            transition: $transition2;
+         }
+      }
+
       .__nav-toggle-icon {
          background-image: none !important;
       }
@@ -13,6 +47,35 @@
          color: $primary-1;
          font-size: 1.1rem;
          font-family: $font;
+      }
+
+      .__collapse {
+         .__navbar {
+            .__nav-links {
+               font: 600 1rem $font;
+               color: $white;
+               margin: 0 .5rem;
+               transition: $transition2;
+
+               &:hover {
+                  color: $primary-3;
+               }
+               // &.active {
+               //    color: $primary-8;
+               //    border-bottom: 1px solid $primary-8;
+               // }
+            }
+            .download {
+               border-radius: 7px;
+               background: $primary-3;
+               color: $white;
+               
+               &:hover {
+                  color: $white;
+                  background: $primary-3;
+               }
+            }
+         }
       }
    }
 }

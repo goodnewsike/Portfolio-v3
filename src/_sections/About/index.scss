@@ -1,0 +1,36 @@
+@import '../../variables';
+
+.__about {
+   height: 100%;
+   width: 100%;
+   background: $background-6;
+
+   .__container {
+      .inner {
+         .about-img {
+            height: 35rem;
+            width: 28rem;
+            // height: 70%;
+            // width: 70%;
+            border-top: .6rem solid $background-7;
+            border-left: .6rem solid $background-7;
+
+            .img {
+               top: .7rem;
+               left: .7rem;
+               background: $primary-4;
+            }
+         }
+
+         .about-desc {
+            a {
+               font-size: 1rem;
+               color: $white;
+               padding: .7rem 1.5rem;
+               border-radius: 10px;
+               background: $primary-3;
+            }
+         }
+      }
+   }
+}

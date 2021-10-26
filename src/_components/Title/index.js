@@ -1,12 +1,22 @@
-import React from 'react'
-import './index.scss'
+import React from 'react';
+import './index.scss';
 
-const Title = () => {
+const Title = ({heading, desc}) => {
    return (
-      <div>
-         title
+      <div className="heading d-flex flex-column">
+         <p className="desc">{desc}</p>
+         <div className="title d-flex align-items-end">
+            <div className="dots mb-2 me-2 d-flex align-items-end">
+               <div className="dot dot1 me-1"></div>
+               <div className="d-flex flex-column align-items-center">
+                  <div className="dot dot2 mb-1"></div>
+                  <div className="dot dot3"></div>
+               </div>
+            </div>
+            <h2 className="">{heading}</h2>
+         </div>
       </div>
-   )
-}
+   );
+};
 
-export default Title
+export default Title;

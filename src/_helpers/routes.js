@@ -1,66 +1,82 @@
-import {
-   FaFacebookSquare,
-   FaLinkedin,
-   FaDribbbleSquare,
-   FaBehanceSquare,
-   FaTwitterSquare,
-} from 'react-icons/fa';
+import {FaFacebook, FaGithub, FaLinkedinIn, FaInstagram} from 'react-icons/fa';
 
 export const socialLinks = [
-   // {
-   //    icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
-   //    url: 'https://www.github.com/goodnewsike',
-   // },
-   // {
-   //    icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
-   //    url: 'https://www.codepen.io/',
-   // },
    {
-      icon: <FaLinkedin className="social-icon"></FaLinkedin>,
-      url: 'https://www.linkedin.com/in/goodnewsike',
+      id: 1,
+      icon: <FaGithub className="social-icon github" />,
+      url: 'https://www.github.com/goodnewsike',
    },
    {
-      icon: <FaDribbbleSquare className="social-icon"></FaDribbbleSquare>,
-      url: 'https://www.dribbble.com/',
+      id: 2,
+      icon: <FaLinkedinIn className="social-icon linkedin" />,
+      url: 'https://www.linkedin.com/in/goodnews-ike',
    },
    {
-      icon: <FaBehanceSquare className="social-icon"></FaBehanceSquare>,
-      url: 'https://www.behance.com',
-   },
-   {
-      icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
+      id: 3,
+      icon: <FaFacebook className="social-icon facebook" />,
       url: 'https://www.facebook.com/Gudniuzplanet',
    },
    {
-      icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
-      url: 'https://www.twitter.com/goodnews-ike',
+      id: 4,
+      icon: <FaInstagram className="social-icon instagram" />,
+      url: 'https://www.instagram.com/prince_gudniuz',
    },
+   // {
+   //    icon: <FaDribbbleSquare className="social-icon" />,
+   //    url: 'https://www.dribbble.com/',
+   // },
+   // {
+   //    icon: <FaBehanceSquare className="social-icon" />,
+   //    url: 'https://www.behance.com/',
+   // },
+   // {
+   //    icon: <FaTwitterSquare className="social-icon" />,
+   //    url: 'https://www.twitter.com/goodnews-ike',
+   // },
 ];
 
 export const navbarLinks = [
    {
-      name: 'home',
+      name: 'Home',
       url: '/',
       activeLink: 1,
    },
    {
-      name: 'about',
+      name: 'About',
       url: '/#about',
       activeLink: 1,
    },
    {
-      name: 'experience',
+      name: 'Experience',
       url: '/#experience',
       activeLink: 1,
    },
    {
-      name: 'projects',
+      name: 'Projects',
       url: '/projects',
       activeLink: 2,
    },
    {
-      name: 'contacts',
+      name: 'Contact',
       url: '/#contacts',
       activeLink: 1,
+   },
+];
+
+export const aboutDesc = [
+   {
+      id: 1,
+      paragraph:
+         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tempore laborum aperiam deleniti laudantium nisi suscipit quae in cumque vel vero temporibus facere quia molestiae accusantium, iusto odio, nobis veniam.',
+   },
+   {
+      id: 2,
+      paragraph:
+         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tempore laborum aperiam deleniti laudantium nisi suscipit quae in cumque vel vero temporibus facere quia molestiae accusantium, iusto odio, nobis veniam.',
+   },
+   {
+      id: 3,
+      paragraph:
+         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tempore laborum aperiam deleniti laudantium nisi suscipit quae in cumque vel vero temporibus facere quia molestiae accusantium, iusto odio, nobis veniam.',
    },
 ];

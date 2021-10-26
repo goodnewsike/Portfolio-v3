@@ -1,8 +1,9 @@
 import React from 'react'
+import './index.scss'
 
 const Experience = () => {
    return (
-      <div>
+      <div className="experience">
          Experience
       </div>
    )

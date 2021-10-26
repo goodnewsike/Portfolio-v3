@@ -67,9 +67,12 @@ $fade1: fadeIn .15s ease-in;
 $max-width: 1200px;
 
 $font: "OpenSans";
-$transition: all 0.3s ease-in;
+$transition1: all 0.25s ease-in;
+$transition2: all 0.3s ease-in;
 $box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
 $box-shadow-hover: 0 0 10px rgba(0, 0, 0, 0.1);
+$box-shadow2: 0 4px 12px 0 rgba(0, 0, 0, .7), 0 2px 4px rgba(0, 0, 0, .5);
+$box-shadow3: inset 0 0 0 1px #fff;
 $backdrop-filter: blur(13px);
 
 $white: #ffffff;
@@ -77,11 +80,15 @@ $black: #000000;
 
 $primary-1: #001618;
 $primary-2: #004448;
-$primary-3: #0FF0FC;
-$primary-4: #02D6E1;
-$primary-5: #09EFFB;
-$primary-6: #59F4FC;
-$primary-7: #AAF9FD;
+$primary-3: rgba(188, 87, 87, 0.5);
+$primary-3a: rgba(188, 87, 87, 0.3);
+$primary-4: #bbbbbb;
 
-// $background-2: linear-gradient(90deg, rgba(255, 152, 119, 0.1) 0%, rgba(245, 59, 0, 0) 100%);
-$background-1: #F53B00;
+// $background-2: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.8) 20%);
+$background-1: rgba(0, 0, 0, .75);
+$background-2: rgba(0, 0, 0, 0);
+$background-3: rgba(0, 0, 0, 0.5);
+$background-4: rgba(255, 255, 255, 0.3);
+$background-5: rgba(0, 0, 0, .95);
+$background-6: rgba(0, 0, 0, 0);
+$background-7: #222222;

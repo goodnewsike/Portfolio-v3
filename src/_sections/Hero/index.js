@@ -42,11 +42,11 @@ const Hero = () => {
                <MDBContainer className="d-flex align-items-center justify-content-center">
                   <MDBRow className="m-0 content">
                      <article className="inner d-flex flex-column align-items-center justify-content-center">
-                        <Zoom duration={3000} delay={1500}>
+                        {/* <Zoom duration={3000} delay={1500}>
                            <div className="profile-img">
                               <img src={profileImg} alt="Profile" className="h-100 w-100" />
                            </div>
-                        </Zoom>
+                        </Zoom> */}
                         <h1 className="py-2">I'm Goodnews Ike</h1>
                         <Fade top duration={2500} delay={3000}>
                            <p className="">Frontend Developer | React.js</p>

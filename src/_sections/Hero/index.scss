@@ -34,8 +34,9 @@
          }
 
          h1 {
-            font: 600 3rem $font;
-            color: $primary-4;
+            font: 600 4rem $font;
+            // color: $primary-4;
+            color: #bbb;
             overflow: hidden;
             border-right: .15em solid transparent; /* The typwriter cursor */
             white-space: nowrap;

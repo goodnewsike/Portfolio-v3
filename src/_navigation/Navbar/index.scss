@@ -7,7 +7,7 @@
    left: 0;
    color: $white;
    box-shadow: none !important;
-   background: $background-3;
+   // background: $background-3;
    transition: $transition2;
    z-index: 500;
    // margin-top: 1rem;
@@ -67,8 +67,8 @@
             }
             .download {
                border-radius: 7px;
-               background: $primary-3;
-               color: $white;
+               background: $primary-4;
+               color: $black;
                
                &:hover {
                   color: $white;

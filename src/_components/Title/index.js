@@ -4,8 +4,8 @@ import './index.scss';
 const Title = ({heading, desc}) => {
    return (
       <div className="heading d-flex flex-column">
-         <p className="desc">{desc}</p>
-         <div className="title d-flex align-items-end">
+         <div className="desc">{desc}</div>
+         <div className="title pt-2 pb-3 d-flex align-items-end">
             <div className="dots mb-2 me-2 d-flex align-items-end">
                <div className="dot dot1 me-1"></div>
                <div className="d-flex flex-column align-items-center">

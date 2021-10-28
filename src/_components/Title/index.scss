@@ -1,8 +1,24 @@
 @import '../../variables';
 
 .heading {
-   p.desc {
-      
+   .desc {
+      // color: red;
+
+      &::before, &::after{
+         content: '';
+         // left: 100%;
+         width: 5rem;
+         height: 2px;
+         margin: 0 auto;
+         background-color: rgba(0, 0, 0, 0.9);
+      }
+      &::before {
+         margin-bottom: 3.125rem;
+      }
+
+      &::after {
+         margin-top: 3.125rem;
+      }
    }
 
    .title {
@@ -11,11 +27,13 @@
             height: .5rem;
             width: .5rem;
             border-radius: 50%;
-            border: 1px solid $background-1;
+            // border: 1px solid $background-1;
+            background: $primary-3;
          }
       }
 
       h2 {
+         font: 700 1.7rem $font;
          display: inline-block;
          text-transform: lowercase;
 

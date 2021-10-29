@@ -37,26 +37,37 @@ export const socialLinks = [
 
 export const navbarLinks = [
    {
+      id: 1,
       name: 'Home',
       url: '/',
       activeLink: 1,
    },
    {
+      id: 2,
       name: 'About',
       url: '/#about',
       activeLink: 1,
    },
    {
+      id: 3,
+      name: 'Services',
+      url: '/#services',
+      activeLink: 1,
+   },
+   {
+      id: 4,
       name: 'Experience',
       url: '/#experience',
       activeLink: 1,
    },
    {
+      id: 5,
       name: 'Projects',
       url: '/projects',
       activeLink: 2,
    },
    {
+      id: 6,
       name: 'Contact',
       url: '/#contacts',
       activeLink: 1,

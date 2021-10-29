@@ -1,0 +1,20 @@
+@import '../../variables';
+
+.__services {
+   height: 100vh;
+
+   .__container {
+      .inner {
+         .cards {
+            background: #222;
+            height: 20rem;
+            border-radius: 10px;
+            transition: $transition2;
+
+            &:hover {
+               transform: translateY(-15px);
+            }
+         }
+      }
+   }
+}

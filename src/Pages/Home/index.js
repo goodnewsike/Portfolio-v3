@@ -5,6 +5,7 @@ import About from '../../_sections/About';
 import Experience from '../../_sections/Experience';
 import Projects from '../../_sections/Project';
 import Contact from '../../_sections/Contact';
+import Services from '../../_sections/Services';
 // import { useInView } from "react-intersection-observer";
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
       <>
          <Hero />
          <About />
+         <Services />
          <Experience />
          <Projects />
          <Contact />

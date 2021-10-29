@@ -1,9 +1,9 @@
 import React from 'react';
 import './index.scss';
 
-const Title = ({heading, desc}) => {
+const Title = ({heading, desc, className}) => {
    return (
-      <div className="heading d-flex flex-column">
+      <div className={`heading d-flex flex-column ${className}`}>
          <div className="desc">{desc}</div>
          <div className="title pt-2 pb-3 d-flex align-items-end">
             <div className="dots mb-2 me-2 d-flex align-items-end">

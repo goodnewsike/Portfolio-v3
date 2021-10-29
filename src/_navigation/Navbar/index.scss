@@ -7,11 +7,13 @@
    left: 0;
    color: $white;
    box-shadow: none !important;
-   // background: $background-3;
    transition: $transition2;
    z-index: 500;
-   // margin-top: 1rem;
-   // border-radius: 3rem;
+   
+   &:hover {
+      background: $background-3;
+      height: 6rem;
+   }
 
    .active {
       visibility: "visible";

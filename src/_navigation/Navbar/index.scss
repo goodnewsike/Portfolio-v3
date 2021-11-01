@@ -15,16 +15,6 @@
       height: 6rem;
    }
 
-   .active {
-      visibility: "visible";
-      transition: "all 0.5s";
-   }   
-   .hidden {
-      visibility: "hidden";
-      transition: "all 0.5s";
-      transform: "translateY(-100%)";
-   }
-
    .__container {
       .__nav-brand {
          color: $white;

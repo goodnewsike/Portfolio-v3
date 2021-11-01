@@ -1,0 +1,42 @@
+@import '../../variables';
+
+.__contact {
+   height: 100vh;
+   background: $primary-1;
+
+   .__container {
+      .inner {
+         ul.content {
+            li {
+               cursor: pointer;
+               
+               span {
+                  opacity: .9;
+               }
+
+               .icon_wrapper {
+                  height: 4rem;
+                  width: 4rem;
+                  color: $white;
+                  opacity: .8;
+                  border-radius: 50%;
+                  overflow: hidden;
+                  background: $primary-3;
+                  transition: $transition2;
+
+                  .contact-icon {
+                     color: $white;
+                     transform: scale(1);
+                  }
+               }
+               &:hover .icon_wrapper {
+                  background: $primary-3a;
+               }
+               a {
+                  color: $white;
+               }
+            }
+         }
+      }
+   }
+}

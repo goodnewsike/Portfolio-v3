@@ -1,4 +1,9 @@
+import {MDBIcon} from 'mdb-react-ui-kit';
 import {FaFacebook, FaGithub, FaLinkedinIn, FaInstagram} from 'react-icons/fa';
+import {ReactComponent as ResponsiveIcon} from '../_assets/icons/responsive.svg';
+import {ReactComponent as LocationIcon} from '../_assets/icons/location.svg';
+import {ReactComponent as EmailIcon} from '../_assets/icons/email.svg';
+import {ReactComponent as PhoneIcon} from '../_assets/icons/phone.svg';
 
 export const socialLinks = [
    {
@@ -90,4 +95,134 @@ export const aboutDesc = [
    //    paragraph:
    //       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tempore laborum aperiam deleniti laudantium ',
    // },
+];
+
+export const services = [
+   {
+      id: 1,
+      icon: <ResponsiveIcon className="_card-icon" />,
+      title: 'Responsive',
+      desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate eius nesciunt culpa iste, porro repellat. Ullam minus culpa ut nesciunt quos, asperiores corrupti, odio debitis necessitatibus maxime itaque enim odit.',
+   },
+   {
+      id: 2,
+      icon: <ResponsiveIcon className="_card-icon" />,
+      title: 'Responsive',
+      desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate eius nesciunt culpa iste, porro repellat. Ullam minus culpa ut nesciunt quos, asperiores corrupti, odio debitis necessitatibus maxime itaque enim odit.',
+   },
+   {
+      id: 3,
+      icon: <ResponsiveIcon className="_card-icon" />,
+      title: 'Responsive',
+      desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate eius nesciunt culpa iste, porro repellat. Ullam minus culpa ut nesciunt quos, asperiores corrupti, odio debitis necessitatibus maxime itaque enim odit.',
+   },
+   // {
+   //    id: 4,
+   //    icon: <ResponsiveIcon className="_card-icon" />,
+   //    title: 'Responsive',
+   //    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate eius nesciunt culpa iste, porro repellat. Ullam minus culpa ut nesciunt quos, asperiores corrupti, odio debitis necessitatibus maxime itaque enim odit.',
+   // },
+];
+
+export const experienceTabs = [
+   {
+      id: 1,
+      activeTab: 1,
+      name: 'zyonel technologies',
+   },
+   {
+      id: 2,
+      activeTab: 2,
+      name: 'lorem ipsum ipsum',
+   },
+   {
+      id: 3,
+      activeTab: 3,
+      name: 'lorem ipsum',
+   },
+];
+
+export const experienceLists = [
+   {
+      id: 1,
+      title: 'Frontend Software Developer',
+      company: 'Zyonel Technologies',
+      duration: 'August 2021 - Present',
+      desc: [
+         {
+            id: 1,
+            activities:
+               'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed Lorem ipsum, dolor sit amet consectetur Lorem ipsum, dolor sit amet consectetur',
+         },
+         {
+            id: 2,
+            activities:
+               'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed Lorem ipsum, dolor sit amet consectetur',
+         },
+         {
+            id: 3,
+            activities: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed',
+         },
+      ],
+   },
+   {
+      id: 2,
+      title: 'Frontend Software',
+      company: 'Zyonel Technologies',
+      duration: 'August 2021 - Present',
+      desc: [
+         {
+            id: 1,
+            activities: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed',
+         },
+         {
+            id: 2,
+            activities: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed',
+         },
+         {
+            id: 3,
+            activities: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed',
+         },
+      ],
+   },
+   {
+      id: 3,
+      title: 'Frontend',
+      company: 'Zyonel Technologies',
+      duration: 'August 2021 - Present',
+      desc: [
+         {
+            id: 1,
+            activities: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed',
+         },
+         {
+            id: 2,
+            activities: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed',
+         },
+         {
+            id: 3,
+            activities: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed',
+         },
+      ],
+   },
+];
+
+export const contactList = [
+   {
+      id: 1,
+      icon: <LocationIcon fas icon="map-marker-alt" className="contact-icon" />,
+      item: 'Itire, Surulere, Lagos',
+   },
+   {
+      id: 2,
+      icon: <EmailIcon far icon="envelope-open" className="contact-icon" />,
+      item: 'goodnewsike19@gmail.com',
+      email: 'goodnewsike19@gmail.com',
+   },
+   {
+      id: 3,
+      icon: <PhoneIcon fas icon="phone-alt" className="contact-icon" />,
+      item: '+234-813-010-0923',
+      phone: '+234-813-010-0923',
+   },
 ];

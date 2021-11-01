@@ -33,8 +33,8 @@ const Hero = () => {
          <MDBContainer fluid className="hero p-0 position-relative">
             <Slider {...settings}>
                {img.map((itm) => (
-                  <div key={itm.id} className="imgs ">
-                     <img src={itm.img} alt="Carousel__img" className="h-100 w-100" />
+                  <div key={itm.id} className="imgs img-fluid">
+                     <img src={itm.img} alt="Carousel__img" className=" h-100 w-100" />
                   </div>
                ))}
             </Slider>
@@ -47,9 +47,13 @@ const Hero = () => {
                               <img src={profileImg} alt="Profile" className="h-100 w-100" />
                            </div>
                         </Zoom> */}
-                        <h1 className="py-2">I'm Goodnews Ike</h1>
+                        <h1 className="py-2">
+                           <Fade right duration={2500} delay={500}>
+                              I'm Goodnews Ike
+                           </Fade>
+                        </h1>
                         <Fade top duration={2500} delay={3000}>
-                           <p className="">Frontend Developer | React.js</p>
+                           <p className="pb-4">Frontend Developer | React.js</p>
                         </Fade>
                         <SocialLinks socialClass="social-links" linksClass="links" />
                      </article>

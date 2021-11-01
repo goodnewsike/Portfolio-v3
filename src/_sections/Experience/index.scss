@@ -1,6 +1,105 @@
 @import '../../variables';
 
-.experience {
+.__experience {
    height: 100vh;
-   background: $background-3;
+   background: $primary-1;
+
+   .__container {
+      .inner {
+         margin: 0 auto !important;
+         width: 65vw !important;
+
+         .title {
+            color: $white;
+         }
+         ul.tabs {
+            width: max-content;
+
+            li.list {
+               font: normal .9rem $font;
+               color: $white;
+               opacity: .5;
+               position: relative;
+               padding: .9rem 1.2rem;
+               height: 3rem;
+               width: 100%;
+               border-left: .2rem solid $primary-5;
+               text-overflow: ellipsis;
+               overflow: hidden;
+               white-space: nowrap;
+               text-align: left;
+               cursor: pointer;
+               transition: color .25s ease, padding .25s ease;
+
+               &:hover {
+                  color: fade-out($white, .25);
+                  background: $primary-3a;
+                  padding-left: 1.5rem;
+                  opacity: 1;
+               }
+
+               &.active {
+                  background: $primary-3;
+                  background: transparent;
+                  padding-left: 1.5rem;
+                  opacity: 1;
+                  border-left: .3rem solid $primary-3;
+               }
+               &:last-of-type {
+                  margin-bottom: 0;
+                  &::after {
+                     content: "";
+                     position: absolute;
+                     top: 0;
+                     left: 0;
+                     height: 3rem;
+                     // width: .3rem;
+                     transition: $transition2;
+                     background-color: fade-out($primary-3, .25);
+                  }
+               }
+            }
+            li.list:nth-child(1).active ~ li.list:last-of-type::after {
+               top: 0;
+            }
+            li.list:nth-child(2).active ~ li.list:last-of-type::after {
+               top: 3rem;
+            }
+            li.list:last-of-type.active::after {
+               top: 6rem;
+            }
+         }
+
+         .description {
+            h4 {
+               font: 700 1.1rem $font;
+               opacity: .9;
+               span {
+                  color: $primary-3;
+               }
+            }
+            p {
+               font: normal .9rem $font;
+               opacity: .7;
+            }
+            ul {
+               li {
+                  font: normal .95rem $font;
+                  line-height: 1.5rem;
+                  opacity: .7;
+                  position: relative;
+
+                  &::before {
+                     content: "▹";
+                     position: absolute;
+                     left: 0;
+                     top: 0;
+                     font-size: 1.5rem;
+                     color: $primary-3;
+                  }
+               }
+            }
+         }
+      }
+   }
 }

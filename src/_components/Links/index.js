@@ -2,16 +2,20 @@ import React from 'react';
 import {Fade} from 'react-reveal';
 import {Link} from 'react-router-dom';
 
-const Links = ({linksClass, data}) => {
+const Links = (props) => {
    return (
       <Fade top cascade duration={2500} delay={3000}>
-         <ul className={linksClass}>
-            {data.map((item) => {
+         <ul className={props.linksClass}>
+            {props.data.map((item) => {
                return (
-                  <li key={item.id} className="d-flex align-items-center justify-content-center">
-                     <Link to={item.url} className="d-flex align-items-center justify-content-center">
-                        {item.icon}
-                     </Link>
+                  <li key={item.id} className={`d-flex align-items-center justify-content-center ${props.liClass && props.liClass}`}>
+                     {item.url && (
+                        <Link to={item.url} className="d-flex align-items-center justify-content-center">
+                           {item.icon}
+                        </Link>
+                     )}
+                     {item.stackIcon && <div className="icon d-flex align-items-center justify-content-center">{item.stackIcon}</div>}
+                     {item.stackName && <span className="mt-2">{item.stackName}</span>}
                   </li>
                );
             })}

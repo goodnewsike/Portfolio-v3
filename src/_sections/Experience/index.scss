@@ -1,8 +1,8 @@
 @import '../../variables';
 
 .__experience {
-   height: 100vh;
-   background: $primary-1;
+   // height: 100vh;
+   background: $white;
 
    .__container {
       .inner {
@@ -16,12 +16,12 @@
             width: max-content;
 
             li.list {
-               font: normal .9rem $font;
-               color: $white;
-               opacity: .5;
+               font: 600 1rem $font;
+               // color: $white;
+               opacity: .9;
                position: relative;
                padding: .9rem 1.2rem;
-               height: 3rem;
+               // height: 3rem;
                width: 100%;
                border-left: .2rem solid $primary-5;
                text-overflow: ellipsis;
@@ -32,7 +32,7 @@
                transition: color .25s ease, padding .25s ease;
 
                &:hover {
-                  color: fade-out($white, .25);
+                  // color: fade-out($white, .25);
                   background: $primary-3a;
                   padding-left: 1.5rem;
                   opacity: 1;
@@ -72,21 +72,21 @@
 
          .description {
             h4 {
-               font: 700 1.1rem $font;
+               font: 700 1.2rem $font;
                opacity: .9;
                span {
                   color: $primary-3;
                }
             }
             p {
-               font: normal .9rem $font;
-               opacity: .7;
+               font: 600 1rem $font;
+               opacity: .9;
             }
             ul {
                li {
-                  font: normal .95rem $font;
+                  font: 600 1rem $font;
                   line-height: 1.5rem;
-                  opacity: .7;
+                  opacity: .9;
                   position: relative;
 
                   &::before {

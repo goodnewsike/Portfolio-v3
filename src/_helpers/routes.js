@@ -1,5 +1,4 @@
-import {MDBIcon} from 'mdb-react-ui-kit';
-import {FaFacebook, FaGithub, FaLinkedinIn, FaInstagram} from 'react-icons/fa';
+import {FaFacebook, FaGithub, FaLinkedinIn, FaInstagram, FaHtml5, FaCss3Alt, FaReact, FaWindows, FaBootstrap} from 'react-icons/fa';
 import {ReactComponent as ResponsiveIcon} from '../_assets/icons/responsive.svg';
 import {ReactComponent as LocationIcon} from '../_assets/icons/location.svg';
 import {ReactComponent as EmailIcon} from '../_assets/icons/email.svg';
@@ -224,5 +223,43 @@ export const contactList = [
       icon: <PhoneIcon fas icon="phone-alt" className="contact-icon" />,
       item: '+234-813-010-0923',
       phone: '+234-813-010-0923',
+   },
+];
+
+export const techStack = [
+   {
+      id: 1,
+      stackIcon: <FaHtml5 className="stack-icon" />,
+      stackName: 'HTML5',
+   },
+   {
+      id: 2,
+      stackIcon: <FaCss3Alt className="stack-icon" />,
+      stackName: 'CSS3',
+   },
+   {
+      id: 3,
+      stackIcon: <FaCss3Alt className="stack-icon" />,
+      stackName: 'JavaScript',
+   },
+   {
+      id: 4,
+      stackIcon: <FaBootstrap className="stack-icon" />,
+      stackName: 'Bootstrap 5',
+   },
+   {
+      id: 5,
+      stackIcon: <FaGithub className="stack-icon" />,
+      stackName: 'Git & Github',
+   },
+   {
+      id: 6,
+      stackIcon: <FaReact className="stack-icon" />,
+      stackName: 'ReactJS',
+   },
+   {
+      id: 7,
+      stackIcon: <FaWindows className="stack-icon" />,
+      stackName: 'Windows',
    },
 ];

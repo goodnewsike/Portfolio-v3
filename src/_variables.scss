@@ -80,11 +80,14 @@ $black: #000000;
 
 $primary-1: #1a1717;
 $primary-2: #2b2b2b;
-$primary-3: rgba(188, 87, 87, 1);
+// $primary-3: rgba(188, 87, 87, 1);
+$primary-3: #000;
 $primary-3a: rgba(188, 87, 87, 0.3);
 // $primary-4: #bbbbbb;
 $primary-4: #e8c4c4;
 $primary-5: #542e23;
+$primary-5a: #542e2398;
+$primary-6: #C4C4C4;
 
 // $background-2: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.8) 20%);
 $background-1: rgba(0, 0, 0, .75);
@@ -94,3 +97,4 @@ $background-4: rgba(255, 255, 255, 0.3);
 $background-5: rgba(0, 0, 0, .95);
 $background-6: rgba(0, 0, 0, .05);
 $background-7: #222222;
+$background-8: #1c1818;

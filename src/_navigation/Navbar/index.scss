@@ -5,19 +5,22 @@
    height: 5rem;
    top: 0;
    left: 0;
-   color: $white;
    box-shadow: none !important;
    transition: $transition2;
    z-index: 500;
    
    &:hover {
-      background: $background-3;
       height: 6rem;
+      background: $background-3;
+   }
+
+   &:hover .__collapse .__navbar .__nav-links {
+      color: $white !important;
    }
 
    .__container {
       .__nav-brand {
-         color: $white;
+         color: $black;
          border: 2px solid $primary-3;
          border-radius: 10px;
          height: 2.5rem;
@@ -30,27 +33,24 @@
             transition: $transition2;
          }
       }
-
       .__nav-toggle-icon {
          background-image: none !important;
       }
-
       .page_name {
          color: $primary-1;
          font-size: 1.1rem;
          font-family: $font;
       }
-
       .__collapse {
          .__navbar {
             .__nav-links {
                font: 600 1rem $font;
-               color: $white;
+               color: $black;
                margin: 0 .5rem;
                transition: $transition2;
 
                &:hover {
-                  color: $primary-3;
+                  color: $primary-3 !important;
                }
                // &.active {
                //    color: $primary-8;
@@ -63,7 +63,7 @@
                color: $black;
                
                &:hover {
-                  color: $white;
+                  color: $white !important;
                   background: $primary-3;
                }
             }

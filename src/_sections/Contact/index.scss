@@ -1,8 +1,8 @@
 @import '../../variables';
 
 .__contact {
-   height: 100vh;
-   background: $primary-1;
+   // height: 100vh;
+   background: $white;
 
    .__container {
       .inner {
@@ -17,7 +17,7 @@
                .icon_wrapper {
                   height: 4rem;
                   width: 4rem;
-                  color: $white;
+                  color: $black;
                   opacity: .8;
                   border-radius: 50%;
                   overflow: hidden;
@@ -33,7 +33,38 @@
                   background: $primary-3a;
                }
                a {
+                  color: $black;
+               }
+            }
+         }
+
+         .__form {
+            background: $white;
+            box-shadow: $box-shadow;
+            border-radius: 5px;
+
+            .input {
+               font: 600 .85rem $font;
+               color: $primary-1;
+               border: 1px solid $primary-4 !important;
+               border-radius: 5px;
+               padding: .7rem 1.2rem;
+            }
+            .label {
+               font: 600 .85rem $font;
+            }
+            button {
+               p {
+                  font: 600 .85rem $font;
                   color: $white;
+                  border-radius: 10px;
+                  padding: 1rem 1.5rem;
+                  background: $primary-5;
+                  transition: $transition2;
+
+                  &:hover {
+                     background: $primary-5a;
+                  }
                }
             }
          }

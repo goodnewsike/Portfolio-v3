@@ -9,12 +9,12 @@ const Experience = () => {
    const [active, setActive] = useState(0);
    const {id, title, company, duration, desc} = experienceLists[active];
    return (
-      <MDBContainer fluid className="__experience p-0">
-         <MDBContainer className="p-0 __container h-100 d-flex align-items-center justify-content-center flex-column">
+      <MDBContainer fluid className="__experience p-0 py-5">
+         <MDBContainer className="p-0 __container py-5 mb-5 h-100 d-flex align-items-center justify-content-center flex-column">
             <Title className="align-items-center pb-4 title" heading="my experience" desc="Where I've worked" />
             <MDBRow className="m-0 inner d-flex align-items-start justify-content-center">
-               <div className="col-md-3 p-0">
-                  <ul className="tabs">
+               <div className="col-md-3 col-sm-12 p-0">
+                  <ul className="tabs d-flex flex-row flex-md-column">
                      {experienceLists.map((itm, i) => (
                         <li
                            key={i}
@@ -27,7 +27,7 @@ const Experience = () => {
                      ))}
                   </ul>
                </div>
-               <div className="col-md-9 p-0">
+               <div className="col-md-9 col-sm-12 p-0">
                   <div key={id} className="description">
                      <h4 className="">
                         {title}

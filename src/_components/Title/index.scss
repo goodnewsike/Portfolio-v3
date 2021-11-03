@@ -3,7 +3,8 @@
 .heading {
    .desc {
       position: relative;
-      opacity: .8;
+      font: 600 1rem $font;
+      opacity: .9;
       // &::before {
       //    content: "";
       //    display: block;

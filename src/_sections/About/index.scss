@@ -1,9 +1,9 @@
 @import '../../variables';
 
 .__about {
-   height: 100vh;
+   // height: 100vh;
    width: 100%;
-   background: $primary-1;
+   background: $white;
 
    .__container {
       .inner {
@@ -11,20 +11,34 @@
 
          .about-me {
             p {
-               font-size: 1.1rem;
+               font: 600 1rem $font;
                line-height: 1.4;
+               opacity: .8;
             }
             .download_btn {
                a {
-                  font-size: .85rem;
+                  font: 600 .95rem $font;
                   color: $white;
                   background: $primary-3;
                   border-radius: 25px;
-                  padding: .7rem 1.2rem;
+                  padding: 1rem 1.5rem;
                   transition: $transition2;
 
                   &:hover {
                      background: $primary-3a;
+                  }
+               }
+            }
+            .ul-class {
+               li {
+                  height: 5rem;
+                  width: 5rem;
+                  .icon {
+                     transform: scale(2);
+                  }
+                  span {
+                     opacity: .9;
+                     font: 600 .8rem $font;
                   }
                }
             }
@@ -39,7 +53,8 @@
             .img {
                top: .7rem;
                left: .7rem;
-               background: $primary-4;
+               // background: $primary-4;
+               background: #bbb;
                transition: $transition2;
 
                // &:hover {

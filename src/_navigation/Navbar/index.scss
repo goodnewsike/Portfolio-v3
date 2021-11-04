@@ -17,6 +17,10 @@
    &:hover .__collapse .__navbar .__nav-links {
       color: $white !important;
    }
+   &:hover .__container .__nav-brand {
+      color: $white !important;
+      border-color: $white;
+   }
 
    .__container {
       .__nav-brand {
@@ -44,7 +48,7 @@
       .__collapse {
          .__navbar {
             .__nav-links {
-               font: 600 1rem $font;
+               font: 600 .95rem $font;
                color: $black;
                margin: 0 .5rem;
                transition: $transition2;

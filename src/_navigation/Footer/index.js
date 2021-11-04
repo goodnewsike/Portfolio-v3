@@ -1,13 +1,20 @@
 import React from 'react';
-import {MDBRow} from 'mdb-react-ui-kit';
+import {MDBContainer, MDBRow} from 'mdb-react-ui-kit';
+import SocialLinks from '../../_components/SocialLinks';
 import './index.scss';
 
 function Footer() {
    return (
-      <MDBRow className="m-0 footer">
-         <div className="inner p-0">footer</div>
-         {/* copyright &copy;{new Date().getFullYear()} */}
-      </MDBRow>
+      <MDBContainer fluid className="__footer p-0 py-5 position-relative">
+         <MDBContainer className="p-0 __container h-100 d-flex align-items-center justify-content-center">
+            <MDBRow className="m-0 inner w-100">
+               <div className="d-flex align-items-center justify-content-between">
+                  <p className="text-capitalize">copyright &copy;{new Date().getFullYear()}</p>
+                  <SocialLinks socialClass="social-links" linksClass="links" />
+               </div>
+            </MDBRow>
+         </MDBContainer>
+      </MDBContainer>
    );
 }
 

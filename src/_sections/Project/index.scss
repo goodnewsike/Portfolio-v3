@@ -1,12 +1,21 @@
 @import '../../variables';
 
+/*
+=============== 
+Hero
+===============
+*/
+
 .__projects {
    height: 30%;
    background: $primary-1;
+   color: $white;
 
-   // .__container {
-   //    .inner {
-
-   //    }
-   // }
+   .__container {
+      .inner {
+         .title {
+            color: $white;
+         }
+      }
+   }
 }

@@ -1,4 +1,5 @@
 import {FaFacebook, FaGithub, FaLinkedinIn, FaInstagram, FaHtml5, FaCss3Alt, FaReact, FaWindows, FaBootstrap} from 'react-icons/fa';
+import {FiGithub, FiExternalLink} from 'react-icons/fi';
 import {ReactComponent as ResponsiveIcon} from '../_assets/icons/responsive.svg';
 import {ReactComponent as LocationIcon} from '../_assets/icons/location.svg';
 import {ReactComponent as EmailIcon} from '../_assets/icons/email.svg';
@@ -50,31 +51,31 @@ export const navbarLinks = [
       id: 2,
       name: 'About',
       url: '/#about',
-      activeLink: 1,
+      // activeLink: 1,
    },
+   // {
+   //    id: 3,
+   //    name: 'Services',
+   //    url: '/#services',
+   //    activeLink: 1,
+   // },
    {
       id: 3,
-      name: 'Services',
-      url: '/#services',
-      activeLink: 1,
+      name: 'Experience',
+      url: '/#experience',
+      // activeLink: 1,
    },
    {
       id: 4,
-      name: 'Experience',
-      url: '/#experience',
-      activeLink: 1,
-   },
-   {
-      id: 5,
       name: 'Projects',
       url: '/projects',
       activeLink: 2,
    },
    {
-      id: 6,
+      id: 5,
       name: 'Contact',
       url: '/#contacts',
-      activeLink: 1,
+      // activeLink: 1,
    },
 ];
 
@@ -261,5 +262,83 @@ export const techStack = [
       id: 7,
       stackIcon: <FaWindows className="stack-icon" />,
       stackName: 'Windows',
+   },
+];
+
+export const projects = [
+   {
+      id: 1,
+      image: `/projects-1.jpg`,
+      title: `just project title`,
+      description:
+         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod quis rerum ipsa repellendus in quaerat fuga illo, quae eos, animi quibusdam aspernatur possimus? Beatae quas eos dolorum vel repellendus.',
+      githubLink: `https://github.com/`,
+      githubIcon: <FiGithub className="project-icon" />,
+      extUrl: `https://google.com`,
+      extUrlIcon: <FiExternalLink className="project-icon" />,
+      stack: [
+         {
+            id: 1,
+            title: 'html',
+         },
+         {
+            id: 2,
+            title: 'css',
+         },
+         {
+            id: 3,
+            title: 'javascript',
+         },
+      ],
+   },
+   {
+      id: 2,
+      image: `/projects-2.jpg`,
+      title: `just project title`,
+      description:
+         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod quis rerum ipsa repellendus in quaerat fuga illo, quae eos, animi quibusdam aspernatur possimus? Beatae quas eos dolorum vel repellendus.',
+      githubLink: `https://github.com/`,
+      githubIcon: <FiGithub className="project-icon" />,
+      extUrl: `https://google.com`,
+      extUrlIcon: <FiExternalLink className="project-icon" />,
+      stack: [
+         {
+            id: 1,
+            title: 'react',
+         },
+         {
+            id: 2,
+            title: 'bootstrap',
+         },
+         {
+            id: 3,
+            title: 'next',
+         },
+      ],
+   },
+   {
+      id: 3,
+      image: `/projects-3.jpg`,
+      title: `just project title`,
+      description:
+         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod quis rerum ipsa repellendus in quaerat fuga illo, quae eos, animi quibusdam aspernatur possimus? Beatae quas eos dolorum vel repellendus.',
+      githubLink: `https://github.com/`,
+      githubIcon: <FiGithub className="project-icon" />,
+      extUrl: `https://google.com`,
+      extUrlIcon: <FiExternalLink className="project-icon" />,
+      stack: [
+         {
+            id: 1,
+            title: 'gatsby',
+         },
+         {
+            id: 2,
+            title: 'bootstrap',
+         },
+         {
+            id: 3,
+            title: 'material ui',
+         },
+      ],
    },
 ];

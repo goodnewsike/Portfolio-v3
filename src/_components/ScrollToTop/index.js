@@ -6,8 +6,7 @@ const ScrollToTop = () => {
    const [isVisible, setIsVisible] = useState(false);
 
    useEffect(() => {
-      const toggleVisibility = () =>
-         window.pageYOffset > 500 ? setIsVisible(true) : setIsVisible(false);
+      const toggleVisibility = () => (window.pageYOffset > 500 ? setIsVisible(true) : setIsVisible(false));
 
       window.addEventListener('scroll', toggleVisibility);
       return () => window.removeEventListener('scroll', toggleVisibility);
@@ -15,8 +14,8 @@ const ScrollToTop = () => {
 
    return isVisible ? (
       <div className="scroll-top">
-         <a href="#top">
-            <ArrowUpwardIcon fontSize="large" />
+         <a href="#top" className="p-3 d-flex align-items-center justify-content-center">
+            <ArrowUpwardIcon className="arrow" />
          </a>
       </div>
    ) : null;

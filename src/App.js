@@ -17,7 +17,7 @@ function App() {
    return (
       <>
          {/* <Loader /> */}
-         {/* <ScrollToTop /> */}
+         <ScrollToTop />
          <MDBContainer fluid className="main-container h-100 p-0">
             <MDBRow className="m-0 g-0">
                <Navbar />

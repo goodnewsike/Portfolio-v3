@@ -2,9 +2,10 @@ import React from 'react';
 import {MDBContainer, MDBRow} from 'mdb-react-ui-kit';
 import Title from '../../_components/Title';
 import {contactList} from '../../_helpers/routes';
-import './index.scss';
 import Formsy from 'formsy-react';
 import CustomInput from '../../_components/CustomInput';
+import Button from '../../_components/Button';
+import './index.scss';
 
 const Contact = () => {
    return (
@@ -62,9 +63,10 @@ const Contact = () => {
                         textarea
                         rows={5}
                      />
-                     <button className="">
+                     {/* <button className="">
                         <p className="text-capitalize">send message</p>
-                     </button>
+                     </button> */}
+                     <Button btnClassName="my-3 download_btn" type="link" linkName="" linkClassName="download_cv" linkTitle="send message" />
                   </Formsy>
                </div>
             </MDBRow>

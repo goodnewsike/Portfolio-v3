@@ -67,6 +67,20 @@
                   }
                }
             }
+            .download_btn {
+               a {
+                  font: 600 .95rem $font;
+                  color: $white;
+                  background: $primary-3;
+                  border-radius: 25px;
+                  padding: 1rem 1.5rem;
+                  transition: $transition2;
+
+                  &:hover {
+                     background: $primary-3a;
+                  }
+               }
+            }
          }
       }
    }

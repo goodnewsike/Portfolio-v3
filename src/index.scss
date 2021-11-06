@@ -30,20 +30,17 @@ html {
       }
 
       scrollbar-width: .475rem; /* Firefox */
-      position: absolute;
+
       &::-webkit-scrollbar {
          width: .475rem; /* Safari and Chrome */
-         position: absolute;
       }
       
       &::-webkit-scrollbar-track {
-         // background: #1a1a1a;
+         background: #1a1a1a;
          background: transparent;
-         position: absolute;
       }
       
       &::-webkit-scrollbar-thumb {
-         position: absolute;
          background-color: #383838;
          border-radius: 30px;
       }
@@ -104,12 +101,5 @@ button, input, textarea {
 img {
    height: 100%;
    width: 100%;
-   vertical-align: middle;
    object-fit: cover;
-}
-
-.width {
-   width: 100%;
-   max-width: $max-width;
-   margin: 0 auto !important;
 }

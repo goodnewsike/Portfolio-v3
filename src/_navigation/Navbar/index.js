@@ -7,6 +7,7 @@ import {Divider} from '@material-ui/core';
 import {useLocationCode} from '../../_helpers/hooks';
 import MenuButton from '../../_components/MenuButton';
 import {navbarLinks} from '../../_helpers/routes';
+import Button from '../../_components/Button';
 import './index.scss';
 
 import cv from '../../_assets/GoodnewsOgechukwuIke.pdf';
@@ -48,9 +49,9 @@ function Navbar() {
             <MDBCollapse className="w-auto __collapse" navbar show={showBasic}>
                <Divider className="d-xl-none nav_divider" />
 
-               <MDBNavbarNav tag="div" className="__navbar ms-auto w-auto mb-2 mb-lg-0 position-relative">
+               <MDBNavbarNav tag="div" className="__navbar ms-auto w-auto mb-2 mb-lg-0 d-flex align-items-center position-relative">
                   {navbarLinks.map((links, i) => (
-                     <MDBNavbarItem className="me-2" key={i}>
+                     <MDBNavbarItem className="me-1" key={i}>
                         <Fade left duration={2500} delay={500}>
                            <MDBNavbarLink
                               href={links.url}
@@ -63,11 +64,12 @@ function Navbar() {
                      </MDBNavbarItem>
                   ))}
                   <Fade left duration={2000} delay={1000}>
-                     <MDBNavbarItem className="">
+                     {/* <MDBNavbarItem className="">
                         <MDBNavbarLink download href={cv} className="__nav-links px-3 download text-capitalize">
                            download cv
                         </MDBNavbarLink>
-                     </MDBNavbarItem>
+                     </MDBNavbarItem> */}
+                     <Button btnClassName="align-middle download_btn" type="file" fileClassName="download_cv" fileName={cv} fileTitle="download cV" />
                   </Fade>
                </MDBNavbarNav>
             </MDBCollapse>

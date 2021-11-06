@@ -16,6 +16,9 @@ const Projects = () => {
                      return <Project key={p.id} {...p} />;
                   })}
                </div>
+               <div className="other-projects d-flex align-items-center justify-content-center position-relative">
+                  <Title className="align-items-center pb-4 title" heading="other projects" desc="More on projects" />
+               </div>
             </MDBRow>
          </MDBContainer>
       </MDBContainer>

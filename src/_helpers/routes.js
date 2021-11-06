@@ -4,6 +4,9 @@ import {ReactComponent as ResponsiveIcon} from '../_assets/icons/responsive.svg'
 import {ReactComponent as LocationIcon} from '../_assets/icons/location.svg';
 import {ReactComponent as EmailIcon} from '../_assets/icons/email.svg';
 import {ReactComponent as PhoneIcon} from '../_assets/icons/phone.svg';
+import project1 from '../_assets/images/projects-1.jpg';
+import project2 from '../_assets/images/projects-2.jpg';
+import project3 from '../_assets/images/projects-3.jpg';
 
 export const socialLinks = [
    {
@@ -268,7 +271,7 @@ export const techStack = [
 export const projects = [
    {
       id: 1,
-      image: `/projects-1.jpg`,
+      image: project1,
       title: `just project title`,
       description:
          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod quis rerum ipsa repellendus in quaerat fuga illo, quae eos, animi quibusdam aspernatur possimus? Beatae quas eos dolorum vel repellendus.',
@@ -293,7 +296,7 @@ export const projects = [
    },
    {
       id: 2,
-      image: `/projects-2.jpg`,
+      image: project2,
       title: `just project title`,
       description:
          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod quis rerum ipsa repellendus in quaerat fuga illo, quae eos, animi quibusdam aspernatur possimus? Beatae quas eos dolorum vel repellendus.',
@@ -318,7 +321,7 @@ export const projects = [
    },
    {
       id: 3,
-      image: `/projects-3.jpg`,
+      image: project3,
       title: `just project title`,
       description:
          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod quis rerum ipsa repellendus in quaerat fuga illo, quae eos, animi quibusdam aspernatur possimus? Beatae quas eos dolorum vel repellendus.',
@@ -341,4 +344,29 @@ export const projects = [
          },
       ],
    },
+   // {
+   //    id: 4,
+   //    image: `/projects-3.jpg`,
+   //    title: `just project title`,
+   //    description:
+   //       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod quis rerum ipsa repellendus in quaerat fuga illo, quae eos, animi quibusdam aspernatur possimus? Beatae quas eos dolorum vel repellendus.',
+   //    githubLink: `https://github.com/`,
+   //    githubIcon: <FiGithub className="project-icon" />,
+   //    extUrl: `https://google.com`,
+   //    extUrlIcon: <FiExternalLink className="project-icon" />,
+   //    stack: [
+   //       {
+   //          id: 1,
+   //          title: 'gatsby',
+   //       },
+   //       {
+   //          id: 2,
+   //          title: 'bootstrap',
+   //       },
+   //       {
+   //          id: 3,
+   //          title: 'material ui',
+   //       },
+   //    ],
+   // },
 ];

@@ -63,10 +63,9 @@ const Contact = () => {
                         textarea
                         rows={5}
                      />
-                     {/* <button className="">
-                        <p className="text-capitalize">send message</p>
-                     </button> */}
-                     <Button btnClassName="my-3 download_btn" type="link" linkName="" linkClassName="download_cv" linkTitle="send message" />
+                     <Button btnClassName="my-md-3 my-1 download_btn text-capitalize" type="button" linkName="" linkClassName="download_cv">
+                        send message
+                     </Button>
                   </Formsy>
                </div>
             </MDBRow>

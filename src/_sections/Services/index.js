@@ -4,9 +4,14 @@ import Title from '../../_components/Title';
 import {services} from '../../_helpers/routes';
 import './index.scss';
 
+import servicesBg from '../../_assets/images/projects-4.jpg';
+
 const Services = () => {
    return (
       <MDBContainer fluid className="__services p-0 py-5 position-relative">
+         {/* <div className="img position-absolute">
+            <img src={servicesBg} alt="" className="h-100 w-100" />
+         </div> */}
          <MDBContainer className="p-0 __container py-5 h-100 d-flex align-items-center justify-content-center position-relative">
             <MDBRow className="m-0 inner w-100 py-3">
                <Title className="align-items-center pb-5 title" heading="my services" desc="What I do" />

@@ -13,6 +13,11 @@
       color: $white;
       background: rgba(75, 27, 27, 0.5);
       transform: scale(1.2);
+      transition: $transition2;
+      
+      &:hover {
+         background: rgba(75, 27, 27, 0.7);
+      }
    }
 }
 

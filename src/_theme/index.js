@@ -17,11 +17,7 @@ const ThemeProvider = ({children}) => {
       setThemeName(name);
    };
 
-   return (
-      <ThemeContext.Provider value={[{themeName, toggleTheme}]}>
-         {children}
-      </ThemeContext.Provider>
-   );
+   return <ThemeContext.Provider value={[{themeName, toggleTheme}]}>{children}</ThemeContext.Provider>;
 };
 
 ThemeProvider.propTypes = {

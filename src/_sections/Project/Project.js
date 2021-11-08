@@ -36,7 +36,7 @@ const Project = (props) => {
             </div>
             <div className="project-links mt-1">
                {props.githubLink && (
-                  <a href={props.githubLink} className={props.id % 2 === 0 ? `ms-0` : 'me-4'}>
+                  <a href={props.githubLink} className={props.id % 2 === 0 ? `ms-md-0 ms-3` : 'ms-sm-3 me-4'}>
                      {props.githubIcon}
                   </a>
                )}

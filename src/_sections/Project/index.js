@@ -18,6 +18,9 @@ const Projects = () => {
                </div>
                <div className="other-projects d-flex align-items-center justify-content-center position-relative">
                   <Title className="align-items-center pb-4 title" heading="other projects" desc="More on projects" />
+                  <div className="inner">
+                     
+                  </div>
                </div>
             </MDBRow>
          </MDBContainer>

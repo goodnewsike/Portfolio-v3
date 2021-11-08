@@ -7,8 +7,6 @@
 
    .__container {
       .inner {
-         // background: #bbb;
-
          .about-me {
             p {
                font: 600 1rem $font;
@@ -44,28 +42,56 @@
             }
          }
 
-         .about-img {
+         .img-wrapper {
             height: 35rem;
             width: 28rem;
-            border-top: .6rem solid $primary-3;
-            border-left: .6rem solid $primary-3;
+            border-radius: 5px;
 
             .img {
-               top: .7rem;
-               left: .7rem;
-               // background: $primary-4;
-               background: #bbb;
-               transition: $transition2;
+               position: relative;
+               border-radius: 5px;
+               mix-blend-mode: multiply;
+               // filter: grayscale(100%) contrast(1);
 
-               // &:hover {
-               //    top: -.1rem;
-               //    left: -.1rem;
-               // }
+               img {
+                  z-index: 5;
+               }
+
+               &::before, &::after {
+                  content: "";
+                  position: absolute;
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 5px;
+                  transition: $transition2;
+               }
+               &::before {
+                  top: 0px;
+                  left: 0px;
+                  background-color: $primary-5;
+                  mix-blend-mode: screen;
+               }
+               &::after {
+                  border: 5px solid $primary-2;
+                  top: -20px;
+                  left: -20px;
+                  z-index: -1;
+               }
+               &:hover {
+                  background: transparent;
+                  outline: 0;
+
+                  &::after {
+                     top: 0;
+                     left: 0;
+                  }
+                  .img {
+                     filter: none;
+                     mix-blend-mode: normal;
+                  }
+               }
             }
-            // &:hover {
-            //    top: .1rem;
-            //    left: .1rem;
-            // }
          }
       }
    }

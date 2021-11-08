@@ -64,11 +64,6 @@ function Navbar() {
                      </MDBNavbarItem>
                   ))}
                   <Fade left duration={2000} delay={1000}>
-                     {/* <MDBNavbarItem className="">
-                        <MDBNavbarLink download href={cv} className="__nav-links px-3 download text-capitalize">
-                           download cv
-                        </MDBNavbarLink>
-                     </MDBNavbarItem> */}
                      <Button btnClassName="align-middle download_btn" type="file" fileClassName="download_cv" fileName={cv} fileTitle="download cV" />
                   </Fade>
                </MDBNavbarNav>

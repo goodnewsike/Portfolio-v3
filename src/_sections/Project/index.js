@@ -2,7 +2,8 @@ import React from 'react';
 import {MDBContainer, MDBRow} from 'mdb-react-ui-kit';
 import Title from '../../_components/Title';
 import Project from './Project';
-import {projects} from '../../_helpers/routes';
+import {otherProjects, projects} from '../../_helpers/routes';
+import OtherProjects from './OtherProjects';
 import './index.scss';
 
 const Projects = () => {
@@ -16,10 +17,12 @@ const Projects = () => {
                      return <Project key={p.id} {...p} />;
                   })}
                </div>
-               <div className="other-projects d-flex align-items-center justify-content-center position-relative">
+               <div className="other-projects d-flex flex-column align-items-center justify-content-center position-relative">
                   <Title className="align-items-center pb-4 title" heading="other projects" desc="More on projects" />
-                  <div className="inner">
-                     
+                  <div className="row m-0 contents">
+                     {otherProjects.map((prop) => (
+                        <OtherProjects key={prop.id} {...prop} />
+                     ))}
                   </div>
                </div>
             </MDBRow>

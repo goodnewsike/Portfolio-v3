@@ -46,9 +46,13 @@
             .input {
                font: 600 .85rem $font;
                color: $primary-1;
-               border: 1px solid $primary-4 !important;
-               border-radius: 5px;
+               border-bottom: 1px solid $primary-4 !important;
+               // border-radius: 5px;
                padding: .7rem 1.2rem;
+            }
+            .textarea {
+               border-radius: 5px;
+               border: 1px solid $primary-4 !important;
             }
             .label {
                font: 600 .85rem $font;

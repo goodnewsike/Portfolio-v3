@@ -17,7 +17,7 @@ const Contact = () => {
                <div className="col-md-5 col-12">
                   <ul className="content">
                      {contactList.map((itm) => (
-                        <li key={itm.id} className="mb-5 d-flex align-items-center text-left">
+                        <li key={itm.id} className="mb-5 d-inline-flex align-items-center text-left">
                            <div className="icon_wrapper d-flex align-items-center justify-content-center me-4">{itm.icon}</div>
                            <span className="">
                               {itm.email ? (
@@ -37,7 +37,7 @@ const Contact = () => {
                   </ul>
                </div>
                <div className="col-md-7 col-12">
-                  <Formsy className="__form py-4 px-4">
+                  <Formsy className="__form py-4 px-5">
                      <CustomInput
                         type="text"
                         className="input my-1 mb-4 border-0 w-100"
@@ -55,7 +55,7 @@ const Contact = () => {
                         placeholder="example@example.com"
                      />
                      <CustomInput
-                        className="input my-1 mb-4 border-0 w-100"
+                        className="input textarea my-1 mb-4 border-0 w-100"
                         labelText="Your Message"
                         labelClassName="label"
                         name="message"

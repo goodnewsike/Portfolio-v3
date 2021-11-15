@@ -469,4 +469,52 @@ export const otherProjects = [
       extUrl: 'https://google.com',
       extIcon: <FiExternalLink className="project-icon" />,
    },
+   {
+      id: 5,
+      projectImg: projectImg,
+      stack: [
+         {
+            id: 1,
+            name: 'Javascript',
+         },
+         {
+            id: 2,
+            name: 'React',
+         },
+         {
+            id: 3,
+            name: 'Redux',
+         },
+      ],
+      description:
+         'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta at doloremque ipsam, nulla incidunt quas ea deserunt esse neque ad eius quis nesciunt labore ipsum, omnis iusto totam necessitatibus reiciendis.',
+      githubLink: 'https://github.com',
+      githubIcon: <FiGithub className="project-icon" />,
+      extUrl: 'https://google.com',
+      extIcon: <FiExternalLink className="project-icon" />,
+   },
+   {
+      id: 6,
+      projectImg: projectImg,
+      stack: [
+         {
+            id: 1,
+            name: 'Javascript',
+         },
+         {
+            id: 2,
+            name: 'React',
+         },
+         {
+            id: 3,
+            name: 'Redux',
+         },
+      ],
+      description:
+         'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta at doloremque ipsam, nulla incidunt quas ea deserunt esse neque ad eius quis nesciunt labore ipsum, omnis iusto totam necessitatibus reiciendis.',
+      githubLink: 'https://github.com',
+      githubIcon: <FiGithub className="project-icon" />,
+      extUrl: 'https://google.com',
+      extIcon: <FiExternalLink className="project-icon" />,
+   },
 ];

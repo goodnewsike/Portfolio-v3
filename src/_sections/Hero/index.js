@@ -1,11 +1,11 @@
 import React from 'react';
 import {MDBContainer, MDBRow} from 'mdb-react-ui-kit';
-import {Zoom, Fade} from 'react-reveal';
+import {Fade} from 'react-reveal';
 import SocialLinks from '../../_components/SocialLinks';
 import Slider from 'react-slick';
 import './index.scss';
 
-import profileImg from '../../_assets/images/goodnews-3.png';
+// import profileImg from '../../_assets/images/goodnews-3.png';
 import img1 from '../../_assets/images/laptop-1.jpg';
 import img2 from '../../_assets/images/goodnews-6.jpg';
 import img3 from '../../_assets/images/code.jpg';
@@ -42,16 +42,7 @@ const Hero = () => {
                <MDBContainer className="d-flex align-items-center justify-content-center">
                   <MDBRow className="m-0 content">
                      <article className="inner d-flex flex-column align-items-center justify-content-center">
-                        {/* <Zoom duration={3000} delay={1500}>
-                           <div className="profile-img">
-                              <img src={profileImg} alt="Profile" className="h-100 w-100" />
-                           </div>
-                        </Zoom> */}
-                        <h1 className="py-2">
-                           <Fade right duration={2500} delay={500}>
-                              I'm Goodnews Ike
-                           </Fade>
-                        </h1>
+                        <h1 className="py-2">I'm Goodnews Ike</h1>
                         <Fade top duration={2500} delay={3000}>
                            <p className="pb-4">Frontend Developer | React.js</p>
                         </Fade>

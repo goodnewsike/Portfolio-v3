@@ -38,26 +38,16 @@
          h1 {
             font: 600 4rem $font;
             color: #bbb;
-            overflow: hidden;
-            border-right: .15em solid transparent;
             white-space: nowrap;
-            margin: 0 auto;
-            // animation: 
-            // typing 1s steps(16, end) 3s;
-            // position: relative;
-            // font: 600 3rem $font;
-            // color: $primary-4;
-            // overflow: hidden;
-            
-            // &::before {
-            //    content: '';
-            //    position: absolute;
-            //    left: 120%;
-            //    width: 120%;
-            //    height: 100%;
-            //    background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
-            //    animation: animate 2s linear forwards;
-            // }
+            overflow: hidden;
+            // border-right: .15em solid transparent;
+            // margin: 0 auto;
+
+            position: relative;
+            text-shadow: 0 10px 10px #000;
+            animation: textTyping 8s linear 500ms;
+            // display: inline-block;
+            // box-shadow: 10px 0 0 #fff;
          }
 
          p {
@@ -135,12 +125,14 @@
    }
 }
 /* The typing effect */
-@keyframes typing {
-   from { width: 0 }
-   to { width: 100% }
-}
-
-@keyframes animate {
-   0% {left: -20%;}
-   100% {left: 120%;}
+@keyframes textTyping {
+   0% {
+      width: 0px;
+   }
+   30% {
+      width: 552.84px;
+   }
+   60% {
+      width: 552.84px;
+   }
 }

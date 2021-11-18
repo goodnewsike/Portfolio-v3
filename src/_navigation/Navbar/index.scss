@@ -11,7 +11,9 @@
    
    &:hover {
       height: 6rem;
-      background: $background-3;
+      backdrop-filter: blur(13px);
+      background: transparent;
+      // background: $background-3;
    }
 
    &:hover .__collapse .__navbar .__nav-links {
@@ -61,16 +63,6 @@
                   border-bottom: 1px solid $primary-5;
                }
             }
-            // .download {
-            //    border-radius: 7px;
-            //    background: $primary-4;
-            //    color: $black;
-               
-            //    &:hover {
-            //       color: $white !important;
-            //       background: $primary-3;
-            //    }
-            // }
             .download_btn {
                a {
                   font: 600 .95rem $font;

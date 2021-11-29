@@ -49,37 +49,55 @@ export const navbarLinks = [
       id: 1,
       name: 'Home',
       url: '/',
-      activeLink: 1,
+      // activeLink: 1,
+      pathname: '/',
+      section: 'home',
+      tab: 'hero',
    },
    {
       id: 2,
       name: 'About',
       url: '/#about',
       // activeLink: 1,
+      pathname: '/',
+      section: 'home',
+      tab: 'about',
    },
-   // {
-   //    id: 3,
-   //    name: 'Services',
-   //    url: '/#services',
-   //    activeLink: 1,
-   // },
    {
       id: 3,
-      name: 'Experience',
-      url: '/#experience',
+      name: 'Services',
+      url: '/#services',
       // activeLink: 1,
+      pathname: '/',
+      section: 'home',
+      tab: 'services',
    },
    {
       id: 4,
-      name: 'Projects',
-      url: '/projects',
-      activeLink: 2,
+      name: 'Experience',
+      url: '/#experience',
+      // activeLink: 1,
+      pathname: '/',
+      section: 'home',
+      tab: 'experience',
    },
    {
       id: 5,
+      name: 'Projects',
+      url: '/projects',
+      activeLink: 2,
+      pathname: '/',
+      section: 'home',
+      tab: 'projects',
+   },
+   {
+      id: 6,
       name: 'Contact',
       url: '/#contacts',
       // activeLink: 1,
+      pathname: '/',
+      section: 'home',
+      tab: 'contact',
    },
 ];
 
@@ -87,18 +105,18 @@ export const aboutDesc = [
    {
       id: 1,
       paragraph:
-         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tempore laborum aperiam deleniti laudantium nisi suscipit quae in cumque vel vero temporibus facere quia molestiae accusantium, iusto odio, nobis veniam.',
+         'I am Goodnews Ogechukwu Ike, a Front-end Developer with skills in HTML5, CSS3, Javascript, jQuery, Bootstrap, React, Redux, Git, Firebase. I use all these tools to build user-friendly and scalable websites.',
    },
    {
       id: 2,
       paragraph:
-         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tempore laborum aperiam deleniti laudantium nisi suscipit quae in cumque ',
+         'I have worked with a team of web designers and developers to build websites that are used for commercial, educational and entertainment purposes and this speaks of my ability to interpret designs that spans across several platforms.',
    },
-   // {
-   //    id: 3,
-   //    paragraph:
-   //       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tempore laborum aperiam deleniti laudantium ',
-   // },
+   {
+      id: 3,
+      paragraph:
+         'I tried to keep to the latest trends in the tech sector by reading up on recent blogs and watching vlogs that enable me to be up to date with developments in the tech sector. Being a diligent, result-oriented and detailed programmer, I always work towards achieving best results on every project I work on.',
+   },
 ];
 
 export const services = [
@@ -111,8 +129,8 @@ export const services = [
    {
       id: 2,
       icon: <ResponsiveIcon className="_card-icon" />,
-      title: 'Responsive',
-      desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate eius nesciunt culpa iste, porro repellat. Ullam minus culpa ut nesciunt quos, asperiores corrupti, odio debitis necessitatibus maxime itaque enim odit.',
+      title: 'Web Development',
+      desc: 'I use various web technologies to develop attractive websites which converts visitors to customers. I develop creative and responsive website layouts.',
    },
    {
       id: 3,

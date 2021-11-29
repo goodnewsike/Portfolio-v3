@@ -3,11 +3,11 @@ import React from 'react';
 const OtherProjects = (props) => {
    return (
       <>
-         <div key={props.id} className="col-md-4 col-12 mb-md-5 mb-3">
+         <div key={props.id} className="col-lg-4 col-md-6 col-12 mb-md-5 mb-3">
             <a href="!#" className="">
                <div className="inner position-relative">
-                  <div className="img">
-                     <img src={props.projectImg} alt="" className="" />
+                  <div className="img d-flex align-items-center justify-content-center">
+                     {props.projectImg ? <img src={props.projectImg} alt="" className="" /> : <span className="">&lt;/&gt;</span>}
                   </div>
                   <div className="description h-100 p-4 position-absolute d-flex align-items-center justify-content-center">
                      <div className="position-relative">

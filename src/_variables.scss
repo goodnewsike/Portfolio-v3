@@ -70,6 +70,7 @@ $font: "OpenSans";
 $transition1: all 0.25s ease-in;
 $transition2: all 0.3s ease-in;
 $box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+$box-shadow22: 0 0 10px rgba(255, 255, 255, 0.06);
 $box-shadow-hover: 0 0 10px rgba(0, 0, 0, 0.1);
 $box-shadow2: 0 4px 12px 0 rgba(0, 0, 0, .7), 0 2px 4px rgba(0, 0, 0, .5);
 $box-shadow3: inset 0 0 0 1px #fff;
@@ -77,6 +78,12 @@ $backdrop-filter: blur(13px);
 
 $white: #ffffff;
 $black: #000000;
+
+/*
+=============== 
+Hero
+===============
+*/
 
 $primary-1: #1a1717;
 $primary-2: #2b2b2b;

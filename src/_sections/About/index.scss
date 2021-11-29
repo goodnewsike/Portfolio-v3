@@ -1,7 +1,7 @@
 @import '../../variables';
 
 .__about {
-   // height: 100vh;
+   height: 100vh;
    width: 100%;
    background: $white;
 
@@ -94,5 +94,9 @@
             }
          }
       }
+   }
+
+   @media screen and (max-width: 992px) {
+      height: 100%;
    }
 }

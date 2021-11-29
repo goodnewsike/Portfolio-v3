@@ -1,7 +1,7 @@
 @import '../../variables';
 
 .__contact {
-   // height: 100vh;
+   height: 100vh;
    background: $white;
 
    .__container {
@@ -85,5 +85,9 @@
             }
          }
       }
+   }
+
+   @media screen and (max-width: 992px) {
+      height: 100%;
    }
 }

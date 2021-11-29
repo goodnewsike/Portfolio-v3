@@ -1,7 +1,7 @@
 @import '../../variables';
 
 .__experience {
-   // height: 100vh;
+   height: 100vh;
    background: $white;
 
    .__container {
@@ -108,5 +108,9 @@
             width: 80% !important;
          }
       }
+   }
+
+   @media screen and (max-width: 992px) {
+      height: 100%;
    }
 }

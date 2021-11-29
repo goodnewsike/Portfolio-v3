@@ -167,6 +167,11 @@ Hero
                         object-fit: cover;
                         transition: .7s;
                      }
+
+                     span {
+                        font: 700 7rem $font;
+                        color: $primary-5;
+                     }
                   }
                   &:hover .img {
                      img {

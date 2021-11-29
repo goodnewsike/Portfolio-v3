@@ -1,5 +1,6 @@
 import React from 'react';
 import {MDBContainer, MDBRow} from 'mdb-react-ui-kit';
+import {Element} from 'react-scroll';
 import {Fade} from 'react-reveal';
 import SocialLinks from '../../_components/SocialLinks';
 import Slider from 'react-slick';
@@ -29,7 +30,7 @@ const Hero = () => {
    };
 
    return (
-      <>
+      <Element name="hero">
          <MDBContainer fluid className="hero p-0 position-relative">
             <Slider {...settings}>
                {img.map((itm) => (
@@ -52,7 +53,7 @@ const Hero = () => {
                </MDBContainer>
             </MDBContainer>
          </MDBContainer>
-      </>
+      </Element>
    );
 };
 

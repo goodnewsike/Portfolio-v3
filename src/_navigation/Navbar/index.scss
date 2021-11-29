@@ -11,9 +11,10 @@
    
    &:hover {
       height: 6rem;
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(13px);
       background: transparent;
-      // background: $background-3;
+      // background: #bbb;
+      // box-shadow: $box-shadow22;
    }
 
    &:hover .__collapse .__navbar .__nav-links {

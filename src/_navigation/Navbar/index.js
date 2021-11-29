@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 import classNames from 'classnames';
 import {Fade, Zoom} from 'react-reveal';
 import {MDBContainer, MDBNavbar, MDBNavbarBrand, MDBNavbarToggler, MDBNavbarNav, MDBNavbarItem, MDBNavbarLink, MDBCollapse} from 'mdb-react-ui-kit';
@@ -53,13 +54,19 @@ function Navbar() {
                   {navbarLinks.map((links, i) => (
                      <MDBNavbarItem className="me-1" key={i}>
                         <Fade left duration={2500} delay={500}>
-                           <MDBNavbarLink
-                              href={links.url}
+                           <Link
+                              to={{
+                                 pathname: links.pathname,
+                                 state: {
+                                    section: links.section,
+                                    tab: links.tab,
+                                 },
+                              }}
                               className={classNames('__nav-links', {
-                                 active: code === links.activeLink,
+                                 active: code === links.tab,
                               })}>
                               {links.name}
-                           </MDBNavbarLink>
+                           </Link>
                         </Fade>
                      </MDBNavbarItem>
                   ))}

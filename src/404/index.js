@@ -4,7 +4,7 @@ import './index.scss'
 function NotFound() {
    return (
       <div>
-         
+         404
       </div>
    )
 }

@@ -9,6 +9,7 @@ import Navbar from './_navigation/Navbar';
 import Footer from './_navigation/Footer';
 import Home from './Pages/Home';
 import Projects from './Pages/Projects';
+import NotFound from './404';
 
 function App() {
    // const [{ themeName }] = useContext(ThemeContext);
@@ -25,6 +26,7 @@ function App() {
                   <Route exact path="/" component={Home} />
                   <Route exact path="/home" component={Home} />
                   <Route exact path="/projects" component={Projects} />
+                  <Route component={NotFound} />
                </Switch>
                <Footer />
             </MDBRow>

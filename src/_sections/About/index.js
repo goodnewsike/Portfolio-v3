@@ -16,7 +16,7 @@ const About = () => {
          <MDBContainer fluid className="__about p-0 py-3 position-relative">
             <div className="about-bg"></div>
             <MDBContainer className="__container h-100 p-0">
-               <MDBRow className="m-0 py-md-5 py-3 px-lg-5 px-md-0 px-0 inner h-100 w-100 d-flex align-items-center justify-content-center">
+               <MDBRow className="m-0 py-md-5 py-3 px-lg-5 px-md-0 px-0 inner h-100 w-100 d-flex align-items-center">
                   <div className="col-md-7 col-sm-12 p-0">
                      <article className="inner img-wrapper ps-lg-5 ps-md-0 ps-0 ms-lg-5 ms-md-0 ms-0 position-relative">
                         <div className="img">
@@ -28,7 +28,7 @@ const About = () => {
                      <article className="about-me d-flex pe-lg-5 pe-md-0 pe-0 px-md-0 px-0 flex-column align-items-start">
                         <Title heading="about me" desc="Who I am" />
                         {aboutDesc.map((props) => (
-                           <p key={props.id} className="py-2 mb-3">
+                           <p key={props.id} className="py-2 mb-2">
                               {props.paragraph}
                            </p>
                         ))}

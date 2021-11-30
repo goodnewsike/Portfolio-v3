@@ -4,9 +4,9 @@ import {ReactComponent as ResponsiveIcon} from '../_assets/icons/responsive.svg'
 import {ReactComponent as LocationIcon} from '../_assets/icons/location.svg';
 import {ReactComponent as EmailIcon} from '../_assets/icons/email.svg';
 import {ReactComponent as PhoneIcon} from '../_assets/icons/phone.svg';
-import project1 from '../_assets/images/projects-1.jpg';
-import project2 from '../_assets/images/projects-2.jpg';
-import project3 from '../_assets/images/projects-3.jpg';
+import project1 from '../_assets/images/expense-reactjs.png';
+import project2 from '../_assets/images/uba.jpg';
+import project3 from '../_assets/images/food-website.jpg';
 import projectImg from '../_assets/images/projects-3.jpg';
 
 export const socialLinks = [
@@ -115,7 +115,7 @@ export const aboutDesc = [
    {
       id: 3,
       paragraph:
-         'I tried to keep to the latest trends in the tech sector by reading up on recent blogs and watching vlogs that enable me to be up to date with developments in the tech sector. Being a diligent, result-oriented and detailed programmer, I always work towards achieving best results on every project I work on.',
+         'I try to keep to the latest trends in the tech sector by reading up on recent blogs and watching vlogs that enable me to be up to date with developments in the tech sector. Being a diligent, result-oriented and detailed programmer, I always work towards achieving best results on every project I work on.',
    },
 ];
 
@@ -167,66 +167,64 @@ export const experienceTabs = [
 export const experienceLists = [
    {
       id: 1,
-      title: 'Frontend Software Developer',
+      title: 'Frontend Developer Intern',
       company: 'Zyonel Technologies',
       duration: 'August 2021 - Present',
       desc: [
          {
             id: 1,
-            activities:
-               'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed Lorem ipsum, dolor sit amet consectetur Lorem ipsum, dolor sit amet consectetur',
+            activities: 'Write maintainable and reuseable codes for different projects.',
          },
          {
             id: 2,
-            activities:
-               'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed Lorem ipsum, dolor sit amet consectetur',
+            activities: 'Work with a team of designers and developers to build a commercial, educative and entertainment web applications.',
          },
          {
             id: 3,
-            activities: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed',
+            activities: 'Work with Javascript framework (React.js) with predictable state manager (Redux).',
          },
       ],
    },
-   {
-      id: 2,
-      title: 'Frontend Software',
-      company: 'Zyonel Technologies',
-      duration: 'August 2021 - Present',
-      desc: [
-         {
-            id: 1,
-            activities: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed',
-         },
-         {
-            id: 2,
-            activities: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed',
-         },
-         {
-            id: 3,
-            activities: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed',
-         },
-      ],
-   },
-   {
-      id: 3,
-      title: 'Frontend',
-      company: 'Zyonel Technologies',
-      duration: 'August 2021 - Present',
-      desc: [
-         {
-            id: 1,
-            activities: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed',
-         },
-         {
-            id: 2,
-            activities: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed',
-         },
-         {
-            id: 3,
-            activities: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veritatis ex quisquam sed',
-         },
-      ],
-   },
+   // {
+   //    id: 2,
+   //    title: 'Frontend Software',
+   //    company: 'Zyonel Technologies',
+   //    duration: 'August 2021 - Present',
+   //    desc: [
+   //       {
+   //          id: 1,
+   //          activities: 'Write maintainable and reuseable codes for different projects.',
+   //       },
+   //       {
+   //          id: 2,
+   //          activities: 'Work with a team of designers and developers to build a commercial, educative and entertainment web applications.',
+   //       },
+   //       {
+   //          id: 3,
+   //          activities: 'Work with Javascript framework (React.js) with predictable state manager (Redux).',
+   //       },
+   //    ],
+   // },
+   // {
+   //    id: 3,
+   //    title: 'Frontend',
+   //    company: 'Zyonel Technologies',
+   //    duration: 'August 2021 - Present',
+   //    desc: [
+   //       {
+   //          id: 1,
+   //          activities: 'Write maintainable and reuseable codes for different projects.',
+   //       },
+   //       {
+   //          id: 2,
+   //          activities: 'Work with a team of designers and developers to build a commercial, educative and entertainment web applications.',
+   //       },
+   //       {
+   //          id: 3,
+   //          activities: 'Work with Javascript framework (React.js) with predictable state manager (Redux).',
+   //       },
+   //    ],
+   // },
 ];
 
 export const contactList = [
@@ -291,75 +289,77 @@ export const projects = [
    {
       id: 1,
       image: project1,
-      title: `just project title`,
+      title: `expense tracker`,
       description:
-         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod quis rerum ipsa repellendus in quaerat fuga illo, quae eos, animi quibusdam aspernatur possimus? Beatae quas eos dolorum vel repellendus.',
-      githubLink: `https://github.com/`,
+         'A minimal application built to help calculate expenses for a given list of items or budget, an shows net calculations or results.',
+      githubLink: `https://github.com/goodnewsike/expense-tracker-using-react`,
       githubIcon: <FiGithub className="project-icon" />,
-      extUrl: `https://google.com`,
+      extUrl: `https://expense-reactjs.netlify.app`,
       extUrlIcon: <FiExternalLink className="project-icon" />,
       stack: [
          {
             id: 1,
-            title: 'html',
+            title: 'React',
          },
          {
             id: 2,
-            title: 'css',
+            title: 'Netlify',
          },
          {
             id: 3,
-            title: 'javascript',
+            title: 'Context API',
          },
       ],
    },
    {
       id: 2,
       image: project2,
-      title: `just project title`,
-      description:
-         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod quis rerum ipsa repellendus in quaerat fuga illo, quae eos, animi quibusdam aspernatur possimus? Beatae quas eos dolorum vel repellendus.',
-      githubLink: `https://github.com/`,
+      title: `UBA website clone`,
+      description: 'A five page UBA website clone that shows information about the website, fully responsive.',
+      githubLink: `https://github.com/goodnewsike/UBA-Website-clone`,
       githubIcon: <FiGithub className="project-icon" />,
-      extUrl: `https://google.com`,
+      extUrl: `https://uba-clone.netlify.app`,
       extUrlIcon: <FiExternalLink className="project-icon" />,
       stack: [
          {
             id: 1,
-            title: 'react',
+            title: 'HTML5',
          },
          {
             id: 2,
-            title: 'bootstrap',
+            title: 'CSS3',
          },
          {
             id: 3,
-            title: 'next',
+            title: 'Javascript',
+         },
+         {
+            id: 4,
+            title: 'Bootstrap',
          },
       ],
    },
    {
       id: 3,
       image: project3,
-      title: `just project title`,
-      description:
-         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod quis rerum ipsa repellendus in quaerat fuga illo, quae eos, animi quibusdam aspernatur possimus? Beatae quas eos dolorum vel repellendus.',
-      githubLink: `https://github.com/`,
+      title: `Responsive Landing Page`,
+      description: 'A landing page with animations to display information of a food vendor',
+      githubLink: `https://github.com/goodnewsike/Mobile-first-responsive-website.`,
       githubIcon: <FiGithub className="project-icon" />,
-      extUrl: `https://google.com`,
+      extUrl: `https://food-landing-sample.netlify.app`,
       extUrlIcon: <FiExternalLink className="project-icon" />,
       stack: [
          {
             id: 1,
-            title: 'gatsby',
+            title: 'HTML',
          },
          {
             id: 2,
-            title: 'bootstrap',
+            title: 'CSS',
          },
          {
             id: 3,
-            title: 'material ui',
+            title: 'Scroll-reveal',
          },
       ],
    },

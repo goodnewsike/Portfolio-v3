@@ -7,11 +7,12 @@ const OtherProjects = (props) => {
             <a href="!#" className="">
                <div className="inner position-relative">
                   <div className="img d-flex align-items-center justify-content-center">
-                     {props.projectImg ? <img src={props.projectImg} alt="" className="" /> : <span className="">&lt;/&gt;</span>}
+                     {/* {props.projectImg ? <img src={props.projectImg} alt="" className="" /> : <span className="">&lt;/&gt;</span>} */}
+                     <span className="text-uppercase text-center">{props.title}</span>
                   </div>
                   <div className="description h-100 p-4 position-absolute d-flex align-items-center justify-content-center">
                      <div className="position-relative">
-                        <h5 className="title pb-2 text-capitalize">project title</h5>
+                        <h5 className="title pb-2 text-capitalize">{props.title}</h5>
                         <p className="pt-2 pb-3">{props.description}</p>
                         <div className="project-stack pb-4 d-flex align-items-center">
                            {props.stack.map((item) => (

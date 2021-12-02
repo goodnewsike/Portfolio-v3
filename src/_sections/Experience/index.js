@@ -15,38 +15,32 @@ const Experience = () => {
          <MDBContainer fluid className="__experience p-0 py-5">
             <MDBContainer className="p-0 __container py-5 mb-5 h-100 d-flex align-items-center justify-content-center flex-column">
                <Title className="align-items-center pb-4 title" heading="my experience" desc="Where I've worked" />
-               <MDBRow className="m-0 inner w-100 h-100 d-flex align-items-start justify-content-center">
-                  <div className="col-md-3 col-sm-12 p-0">
-                     <ul className="tabs w-100 h-100 d-flex flex-row flex-md-column">
-                        {experienceLists.map((itm, i) => (
-                           <li
-                              key={i}
-                              onClick={() => setActive(i)}
-                              className={classNames('list text-capitalize', {
-                                 active: i === active,
-                              })}>
-                              {itm.company}
+               <div className="m-0 inner d-flex align-items-start justify-content-center">
+                  <ul className="tabs me-4">
+                     {experienceLists.map((itm, i) => (
+                        <li
+                           key={i}
+                           onClick={() => setActive(i)}
+                           className={classNames('text-capitalize', {
+                              active: i === active,
+                           })}>
+                           {itm.company}
+                        </li>
+                     ))}
+                  </ul>
+                  <div key={id} className="description">
+                     <h4 className="mb-2">{title}</h4>
+                     <span className="p-1"> @ {company}</span>
+                     <p className="pt-2 pb-4">{duration}</p>
+                     <ul className="">
+                        {desc.map((item) => (
+                           <li key={item.id} className="py-1 ps-4 mb-3">
+                              {item.activities}
                            </li>
                         ))}
                      </ul>
                   </div>
-                  <div className="col-md-9 col-sm-12 p-0">
-                     <div key={id} className="description h-100">
-                        <h4 className="">
-                           {title}
-                           <span className=""> @ {company}</span>
-                        </h4>
-                        <p className="pt-2 pb-4">{duration}</p>
-                        <ul className="">
-                           {desc.map((item) => (
-                              <li key={item.id} className="py-1 ps-4 mb-3">
-                                 {item.activities}
-                              </li>
-                           ))}
-                        </ul>
-                     </div>
-                  </div>
-               </MDBRow>
+               </div>
             </MDBContainer>
          </MDBContainer>
       </Element>

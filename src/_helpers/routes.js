@@ -185,26 +185,26 @@ export const experienceLists = [
          },
       ],
    },
-   // {
-   //    id: 2,
-   //    title: 'Frontend Software',
-   //    company: 'Zyonel Technologies',
-   //    duration: 'August 2021 - Present',
-   //    desc: [
-   //       {
-   //          id: 1,
-   //          activities: 'Write maintainable and reuseable codes for different projects.',
-   //       },
-   //       {
-   //          id: 2,
-   //          activities: 'Work with a team of designers and developers to build a commercial, educative and entertainment web applications.',
-   //       },
-   //       {
-   //          id: 3,
-   //          activities: 'Work with Javascript framework (React.js) with predictable state manager (Redux).',
-   //       },
-   //    ],
-   // },
+   {
+      id: 2,
+      title: 'Frontend Software',
+      company: 'Zyonel ',
+      duration: 'August 2021 - Present',
+      desc: [
+         {
+            id: 1,
+            activities: 'Write maintainable and reuseable codes for different projects.',
+         },
+         {
+            id: 2,
+            activities: 'Work with a team of designers and developers to build a commercial, educative and entertainment web applications.',
+         },
+         {
+            id: 3,
+            activities: 'Work with Javascript framework (React.js) with predictable state manager (Redux).',
+         },
+      ],
+   },
    // {
    //    id: 3,
    //    title: 'Frontend',
@@ -393,6 +393,7 @@ export const projects = [
 export const otherProjects = [
    {
       id: 1,
+      title: 'portfolio v1',
       projectImg: projectImg,
       stack: [
          {
@@ -410,13 +411,14 @@ export const otherProjects = [
       ],
       description:
          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta at doloremque ipsam, nulla incidunt quas ea deserunt esse neque ad eius quis nesciunt labore ipsum, omnis iusto totam necessitatibus reiciendis.',
-      githubLink: 'https://github.com',
+      githubLink: 'https://github.com/goodnewsike/ikegoodnews',
       githubIcon: <FiGithub className="project-icon" />,
-      extUrl: 'https://google.com',
+      extUrl: 'https://infallible-shirley-33e2c1.netlify.app/',
       extIcon: <FiExternalLink className="project-icon" />,
    },
    {
       id: 2,
+      title: 'scroll reveal',
       projectImg: projectImg,
       stack: [
          {
@@ -434,13 +436,14 @@ export const otherProjects = [
       ],
       description:
          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta at doloremque ipsam, nulla incidunt quas ea deserunt esse neque ad eius quis nesciunt labore ipsum, omnis iusto totam necessitatibus reiciendis.',
-      githubLink: 'https://github.com',
+      githubLink: 'https://github.com/goodnewsike/scroll-reveal',
       githubIcon: <FiGithub className="project-icon" />,
-      extUrl: 'https://google.com',
+      extUrl: 'https://keen-jones-093f3d.netlify.app/',
       extIcon: <FiExternalLink className="project-icon" />,
    },
    {
       id: 3,
+      title: 'step form',
       projectImg: projectImg,
       stack: [
          {
@@ -458,13 +461,14 @@ export const otherProjects = [
       ],
       description:
          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta at doloremque ipsam, nulla incidunt quas ea deserunt esse neque ad eius quis nesciunt labore ipsum, omnis iusto totam necessitatibus reiciendis.',
-      githubLink: 'https://github.com',
+      githubLink: 'https://github.com/goodnewsike/step-form',
       githubIcon: <FiGithub className="project-icon" />,
-      extUrl: 'https://google.com',
+      extUrl: 'https://zealous-ardinghelli-88b88e.netlify.app/',
       extIcon: <FiExternalLink className="project-icon" />,
    },
    {
       id: 4,
+      title: 'todo list',
       projectImg: projectImg,
       stack: [
          {
@@ -482,13 +486,14 @@ export const otherProjects = [
       ],
       description:
          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta at doloremque ipsam, nulla incidunt quas ea deserunt esse neque ad eius quis nesciunt labore ipsum, omnis iusto totam necessitatibus reiciendis.',
-      githubLink: 'https://github.com',
+      githubLink: 'https://github.com/goodnewsike/js-todo-list',
       githubIcon: <FiGithub className="project-icon" />,
-      extUrl: 'https://google.com',
+      extUrl: 'https://zen-poitras-6c7c5a.netlify.app',
       extIcon: <FiExternalLink className="project-icon" />,
    },
    {
       id: 5,
+      title: 'issue tracker',
       projectImg: projectImg,
       stack: [
          {
@@ -506,13 +511,14 @@ export const otherProjects = [
       ],
       description:
          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta at doloremque ipsam, nulla incidunt quas ea deserunt esse neque ad eius quis nesciunt labore ipsum, omnis iusto totam necessitatibus reiciendis.',
-      githubLink: 'https://github.com',
+      githubLink: 'https://github.com/goodnewsike/js-issue-tracker',
       githubIcon: <FiGithub className="project-icon" />,
-      extUrl: 'https://google.com',
+      extUrl: 'https://lucid-curie-73f693.netlify.app/',
       extIcon: <FiExternalLink className="project-icon" />,
    },
    {
       id: 6,
+      title: 'portfolio v2',
       projectImg: projectImg,
       stack: [
          {
@@ -532,7 +538,7 @@ export const otherProjects = [
          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta at doloremque ipsam, nulla incidunt quas ea deserunt esse neque ad eius quis nesciunt labore ipsum, omnis iusto totam necessitatibus reiciendis.',
       githubLink: 'https://github.com',
       githubIcon: <FiGithub className="project-icon" />,
-      extUrl: 'https://google.com',
+      extUrl: 'https://nervous-colden-802aab.netlify.app/',
       extIcon: <FiExternalLink className="project-icon" />,
    },
 ];

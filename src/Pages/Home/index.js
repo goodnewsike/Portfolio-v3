@@ -9,13 +9,9 @@ import Experience from '../../_sections/Experience';
 import Projects from '../../_sections/Project';
 import Contact from '../../_sections/Contact';
 import Services from '../../_sections/Services';
-// import { useInView } from "react-intersection-observer";
 
 function Home() {
-   // const [sectionRef, setSectionRef] = useInView({ threshold: 0.5 });
-
    const {state} = useLocation();
-   // const [tab, setTab] = useState(1);
    useEffect(() => {
       if ('home' === state?.section) {
          switch (state?.tab) {
@@ -75,19 +71,12 @@ function Home() {
 
    return (
       <>
-         <Element name="home">
+         <Element name="home" className="__home">
             <Hero />
             <About />
-            {/* <Services /> */}
             <Experience />
             <Projects />
             <Contact />
-            {/* {tab === 1 && <Hero />}
-            {tab === 2 && <About />}
-            {tab === 3 && <Services />}
-            {tab === 4 && <Experience />}
-            {tab === 5 && <Projects />}
-            {tab === 6 && <Contact />} */}
          </Element>
       </>
    );

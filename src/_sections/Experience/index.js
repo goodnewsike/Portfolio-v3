@@ -12,7 +12,7 @@ const Experience = () => {
 
    return (
       <Element name="experience">
-         <MDBContainer fluid className="__experience p-0 py-5">
+         <MDBContainer fluid className="__experience p-0 py-5 section">
             <MDBContainer className="p-0 __container py-5 mb-5 h-100 d-flex align-items-center justify-content-center flex-column">
                <Title className="align-items-center pb-4 title" heading="my experience" desc="Where I've worked" />
                <div className="m-0 inner d-flex align-items-start justify-content-center">

@@ -31,7 +31,7 @@ const Hero = () => {
 
    return (
       <Element name="hero">
-         <MDBContainer fluid className="hero p-0 position-relative">
+         <MDBContainer fluid className="hero p-0 position-relative section">
             <Slider {...settings}>
                {img.map((itm) => (
                   <div key={itm.id} className="imgs img-fluid">

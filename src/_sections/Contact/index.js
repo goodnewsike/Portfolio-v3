@@ -11,7 +11,7 @@ import './index.scss';
 const Contact = () => {
    return (
       <Element name="contact">
-         <MDBContainer fluid className="__contact p-0 py-5 position-relative">
+         <MDBContainer fluid className="__contact p-0 py-5 position-relative section">
             <MDBContainer className="p-0 __container h-100 d-flex flex-column align-items-center justify-content-center position-relative">
                <Title className="align-items-center pb-1 title text-uppercase" heading="contact Me" desc="Just a Click Away" />
                <h6 className="mb-5 px-md-0 px-3 text-center">I'm available to work on your project. I'm just a click away</h6>

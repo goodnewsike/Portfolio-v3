@@ -69,7 +69,8 @@
                &::before {
                   top: 0px;
                   left: 0px;
-                  background-color: $primary-5;
+                  // background-color: $primary-5;
+                  background-color: transparent;
                   mix-blend-mode: screen;
                }
                &::after {

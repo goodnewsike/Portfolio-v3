@@ -6,7 +6,7 @@ const Title = ({heading, desc, className}) => {
       <div className={`heading d-flex flex-column ${className}`}>
          <div className="desc">{desc}</div>
          <div className="title pt-2 pb-3 d-flex align-items-end">
-            <div className="dots mb-2 me-2 d-flex align-items-end">
+            <div className="dots mb-2 me-4 d-flex align-items-end">
                <div className="dot dot1 me-1"></div>
                <div className="d-flex flex-column align-items-center">
                   <div className="dot dot2 mb-1"></div>

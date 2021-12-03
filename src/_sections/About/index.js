@@ -13,7 +13,7 @@ import aboutImg from '../../_assets/images/goodnews-5.png';
 const About = () => {
    return (
       <Element name="about">
-         <MDBContainer fluid className="__about p-0 py-3 position-relative">
+         <MDBContainer fluid className="__about p-0 py-3 position-relative section">
             <div className="about-bg"></div>
             <MDBContainer className="__container h-100 p-0">
                <MDBRow className="m-0 py-md-5 py-3 px-lg-5 px-md-0 px-0 inner h-100 w-100 d-flex align-items-center">

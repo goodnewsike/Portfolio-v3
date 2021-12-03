@@ -1,9 +1,9 @@
 @import '../../variables';
 
-.home {
-   // background: $primary-7;
+.__home {
+   scroll-snap-type: y mandatory;
 
-   .inner {
-      // background: #777;
+   .section {
+      scroll-snap-align: start;
    }
 }

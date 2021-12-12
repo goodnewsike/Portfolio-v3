@@ -63,17 +63,17 @@ export const navbarLinks = [
       section: 'home',
       tab: 'about',
    },
+   // {
+   //    id: 3,
+   //    name: 'Services',
+   //    url: '/#services',
+   //    // activeLink: 1,
+   //    pathname: '/',
+   //    section: 'home',
+   //    tab: 'services',
+   // },
    {
       id: 3,
-      name: 'Services',
-      url: '/#services',
-      // activeLink: 1,
-      pathname: '/',
-      section: 'home',
-      tab: 'services',
-   },
-   {
-      id: 4,
       name: 'Experience',
       url: '/#experience',
       // activeLink: 1,
@@ -82,7 +82,7 @@ export const navbarLinks = [
       tab: 'experience',
    },
    {
-      id: 5,
+      id: 4,
       name: 'Projects',
       url: '/projects',
       activeLink: 2,
@@ -91,7 +91,7 @@ export const navbarLinks = [
       tab: 'projects',
    },
    {
-      id: 6,
+      id: 5,
       name: 'Contact',
       url: '/#contacts',
       // activeLink: 1,
@@ -146,23 +146,23 @@ export const services = [
    // },
 ];
 
-export const experienceTabs = [
-   {
-      id: 1,
-      activeTab: 1,
-      name: 'zyonel technologies',
-   },
-   {
-      id: 2,
-      activeTab: 2,
-      name: 'lorem ipsum ipsum',
-   },
-   {
-      id: 3,
-      activeTab: 3,
-      name: 'lorem ipsum',
-   },
-];
+// export const experienceTabs = [
+//    {
+//       id: 1,
+//       activeTab: 1,
+//       name: 'zyonel technologies',
+//    },
+//    {
+//       id: 2,
+//       activeTab: 2,
+//       name: 'lorem ipsum ipsum',
+//    },
+//    {
+//       id: 3,
+//       activeTab: 3,
+//       name: 'lorem ipsum',
+//    },
+// ];
 
 export const experienceLists = [
    {

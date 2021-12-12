@@ -8,10 +8,10 @@ import CustomInput from '../../_components/CustomInput';
 import Button from '../../_components/Button';
 import './index.scss';
 
-const Contact = () => {
+const Contact = (props) => {
    return (
       <Element name="contact">
-         <MDBContainer fluid className="__contact p-0 py-5 position-relative section">
+         <MDBContainer ref={props.ref} fluid className="__contact p-0 py-5 position-relative section">
             <MDBContainer className="p-0 __container h-100 d-flex flex-column align-items-center justify-content-center position-relative">
                <Title className="align-items-center pb-1 title text-uppercase" heading="contact Me" desc="Just a Click Away" />
                <h6 className="mb-5 px-md-0 px-3 text-center">I'm available to work on your project. I'm just a click away</h6>

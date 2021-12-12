@@ -7,10 +7,10 @@ import {otherProjects, projects} from '../../_helpers/routes';
 import OtherProjects from './OtherProjects';
 import './index.scss';
 
-const Projects = () => {
+const Projects = (props) => {
    return (
       <Element name="projects">
-         <MDBContainer fluid className="__projects p-0 py-5 position-relative section">
+         <MDBContainer ref={props.ref} fluid className="__projects p-0 py-5 position-relative section">
             <MDBContainer className="p-0 __container h-100 d-flex align-items-center justify-content-center position-relative">
                <MDBRow className="m-0 inner w-100">
                   <Title className="align-items-center pb-4 title" heading="my projects" desc="What I've worked on" />

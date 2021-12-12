@@ -1,18 +1,18 @@
 import React, {useState} from 'react';
-import {MDBContainer, MDBRow} from 'mdb-react-ui-kit';
+import {MDBContainer} from 'mdb-react-ui-kit';
 import {Element} from 'react-scroll';
 import Title from '../../_components/Title';
 import classNames from 'classnames';
 import {experienceLists} from '../../_helpers/routes';
 import './index.scss';
 
-const Experience = () => {
+const Experience = (props) => {
    const [active, setActive] = useState(0);
    const {id, title, company, duration, desc} = experienceLists[active];
 
    return (
       <Element name="experience">
-         <MDBContainer fluid className="__experience p-0 py-5 section">
+         <MDBContainer ref={props.ref} fluid className="__experience p-0 py-5 section">
             <MDBContainer className="p-0 __container py-5 mb-5 h-100 d-flex align-items-center justify-content-center flex-column">
                <Title className="align-items-center pb-4 title" heading="my experience" desc="Where I've worked" />
                <div className="m-0 inner d-flex align-items-start justify-content-center">

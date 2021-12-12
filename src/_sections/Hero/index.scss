@@ -40,14 +40,18 @@
             color: #bbb;
             white-space: nowrap;
             overflow: hidden;
-            // border-right: .15em solid transparent;
-            // margin: 0 auto;
-
             position: relative;
             text-shadow: 0 10px 10px #000;
             animation: textTyping 8s linear 500ms;
+            // border-right: .15em solid transparent;
+            // margin: 0 auto;
             // display: inline-block;
             // box-shadow: 10px 0 0 #fff;
+         }
+         @media screen and (max-width: 992px) {
+            h1 {
+               font-size: 2.7rem;
+            }
          }
 
          p {

@@ -13,7 +13,7 @@ import './index.scss';
 
 import cv from '../../_assets/GoodnewsOgechukwuIke.pdf';
 
-function Navbar() {
+function Navbar(props) {
    const code = useLocationCode();
    const [showBasic, setShowBasic] = useState(false);
    const scrollDirection = UseScrollDirection('down');
@@ -52,7 +52,7 @@ function Navbar() {
 
                <MDBNavbarNav tag="div" className="__navbar ms-auto w-auto mb-2 mb-lg-0 d-flex align-items-center position-relative">
                   {navbarLinks.map((links, i) => (
-                     <MDBNavbarItem className="me-1" key={i}>
+                     <MDBNavbarItem className="me-3" key={i}>
                         <Fade left duration={2500} delay={500}>
                            <Link
                               to={{
@@ -62,6 +62,7 @@ function Navbar() {
                                     tab: links.tab,
                                  },
                               }}
+                              onClick={props.onClick}
                               className={classNames('__nav-links', {
                                  active: code === links.tab,
                               })}>
@@ -70,9 +71,9 @@ function Navbar() {
                         </Fade>
                      </MDBNavbarItem>
                   ))}
-                  <Fade left duration={2000} delay={1000}>
+                  {/* <Fade left duration={2000} delay={1000}>
                      <Button btnClassName="align-middle download_btn" type="file" fileClassName="download_cv" fileName={cv} fileTitle="download cV" />
-                  </Fade>
+                  </Fade> */}
                </MDBNavbarNav>
             </MDBCollapse>
          </MDBContainer>

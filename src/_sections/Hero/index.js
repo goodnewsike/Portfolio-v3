@@ -11,7 +11,7 @@ import img1 from '../../_assets/images/laptop-1.jpg';
 import img2 from '../../_assets/images/goodnews-6.jpg';
 import img3 from '../../_assets/images/code.jpg';
 
-const Hero = () => {
+const Hero = (props) => {
    const img = [
       {id: 1, img: img1},
       {id: 2, img: img2},
@@ -31,7 +31,7 @@ const Hero = () => {
 
    return (
       <Element name="hero">
-         <MDBContainer fluid className="hero p-0 position-relative section">
+         <MDBContainer ref={props.ref} fluid className="hero p-0 position-relative section">
             <Slider {...settings}>
                {img.map((itm) => (
                   <div key={itm.id} className="imgs img-fluid">

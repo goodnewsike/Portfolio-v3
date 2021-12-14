@@ -64,11 +64,11 @@ function Home(props) {
    return (
       <>
          <Element name="home" className="__home">
-            <Hero /*ref={props.heroRef}*/ />
-            <About /*ref={props.aboutRef}*/ />
-            <Experience /*ref={props.experienceRef}*/ />
-            <Projects /*ref={props.projectsRef}*/ />
-            <Contact /*ref={props.contactRef}*/ />
+            <Hero />
+            <About />
+            <Experience />
+            <Projects />
+            <Contact />
          </Element>
       </>
    );

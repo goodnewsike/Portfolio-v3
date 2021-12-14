@@ -6,13 +6,18 @@ import classNames from 'classnames';
 import {experienceLists} from '../../_helpers/routes';
 import './index.scss';
 
+import bgImg from '../../_assets/images/laptop-3.jpg';
+
 const Experience = (props) => {
    const [active, setActive] = useState(0);
    const {id, title, company, duration, desc} = experienceLists[active];
 
    return (
       <Element name="experience">
-         <MDBContainer ref={props.ref} fluid className="__experience p-0 py-5 section">
+         <MDBContainer fluid className="__experience p-0 py-5 section position-relative">
+            <div className="img position-absolute">
+               {/* <img src={bgImg} alt="" className="h-100 w-100" /> */}
+            </div>
             <MDBContainer className="p-0 __container py-5 mb-5 h-100 d-flex align-items-center justify-content-center flex-column">
                <Title className="align-items-center pb-4 title" heading="my experience" desc="Where I've worked" />
                <div className="m-0 inner d-flex align-items-start justify-content-center">

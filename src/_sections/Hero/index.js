@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {MDBContainer, MDBRow} from 'mdb-react-ui-kit';
 import {Element} from 'react-scroll';
 import {Fade} from 'react-reveal';
@@ -28,14 +28,35 @@ const Hero = (props) => {
       autoplaySpeed: 5000,
       cssEase: 'linear',
    };
+   const [offset, setOffset] = useState(0);
+
+   useEffect(() => {
+      function handleScroll() {
+         setOffset(window.pageYOffset);
+      }
+
+      window.addEventListener('scroll', handleScroll);
+
+      return () => {
+         window.removeEventListener('scroll', handleScroll);
+      };
+   }, [offset]);
 
    return (
       <Element name="hero">
-         <MDBContainer ref={props.ref} fluid className="hero p-0 position-relative section">
+         <MDBContainer fluid className="hero p-0 position-relative section">
             <Slider {...settings}>
                {img.map((itm) => (
                   <div key={itm.id} className="imgs img-fluid">
-                     <img src={itm.img} alt="Carousel__img" className=" h-100 w-100" />
+                     <img
+                        src={itm.img}
+                        style={{
+                           // filter: `blur(4px)`,
+                           transform: `translateY(${offset * 0.5}px)`,
+                        }}
+                        alt="Carousel__img"
+                        className=" h-100 w-100"
+                     />
                   </div>
                ))}
             </Slider>

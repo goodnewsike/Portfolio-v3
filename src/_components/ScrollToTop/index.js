@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import {FaArrowUp} from 'react-icons/fa';
 import './index.scss';
 
 const ScrollToTop = () => {
@@ -15,7 +15,7 @@ const ScrollToTop = () => {
    return isVisible ? (
       <div className="scroll-top">
          <a href="#top" className="p-3 d-flex align-items-center justify-content-center">
-            <ArrowUpwardIcon className="arrow" />
+            <FaArrowUp className="arrow" />
          </a>
       </div>
    ) : null;

@@ -2,16 +2,15 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import classNames from 'classnames';
 import {Fade, Zoom} from 'react-reveal';
-import {MDBContainer, MDBNavbar, MDBNavbarBrand, MDBNavbarToggler, MDBNavbarNav, MDBNavbarItem, MDBNavbarLink, MDBCollapse} from 'mdb-react-ui-kit';
+import {MDBContainer, MDBNavbar, MDBNavbarBrand, MDBNavbarToggler, MDBNavbarNav, MDBNavbarItem, MDBCollapse} from 'mdb-react-ui-kit';
 import UseScrollDirection from '../../_components/UseScrollDirection';
-import {Divider} from '@material-ui/core';
 import {useLocationCode} from '../../_helpers/hooks';
 import MenuButton from '../../_components/MenuButton';
 import {navbarLinks} from '../../_helpers/routes';
-import Button from '../../_components/Button';
+// import Button from '../../_components/Button';
 import './index.scss';
 
-import cv from '../../_assets/GoodnewsOgechukwuIke.pdf';
+// import cv from '../../_assets/GoodnewsOgechukwuIke.pdf';
 
 function Navbar(props) {
    const code = useLocationCode();
@@ -48,8 +47,6 @@ function Navbar(props) {
             </MDBNavbarToggler>
 
             <MDBCollapse className="w-auto __collapse" navbar show={showBasic}>
-               <Divider className="d-xl-none nav_divider" />
-
                <MDBNavbarNav tag="div" className="__navbar ms-auto w-auto mb-2 mb-lg-0 d-flex align-items-center position-relative">
                   {navbarLinks.map((links, i) => (
                      <MDBNavbarItem className="me-3" key={i}>

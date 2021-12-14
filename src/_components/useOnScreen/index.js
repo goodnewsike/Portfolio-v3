@@ -12,7 +12,8 @@ export default function useOnScreen(ref, rootMargin = '0px') {
          // eslint-disable-next-line react-hooks/exhaustive-deps
          observer.unobserve(ref.current);
       };
-   }, [ref, rootMargin]);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+   }, [ref.current, rootMargin]);
 
    return isVisible;
 }

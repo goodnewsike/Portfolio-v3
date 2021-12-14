@@ -47,16 +47,23 @@
             width: 28rem;
             border-radius: 5px;
 
+            .visible {                  
+               // transform: translateX(0%);
+               opacity: 1;
+            }
+            .invisible {               
+               // transform: translateX(-200%);
+               opacity: 0;
+            }
             .img {
                position: relative;
                border-radius: 5px;
                mix-blend-mode: multiply;
-               // filter: grayscale(100%) contrast(1);
-
+               transition: 2s;
+               // filter: grayscale(100%) contrast(1);               
                img {
                   z-index: 5;
                }
-
                &::before, &::after {
                   content: "";
                   position: absolute;
@@ -82,7 +89,6 @@
                &:hover {
                   background: transparent;
                   outline: 0;
-
                   &::after {
                      top: 0;
                      left: 0;

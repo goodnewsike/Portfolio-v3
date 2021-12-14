@@ -1,26 +1,30 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import {MDBContainer, MDBRow} from 'mdb-react-ui-kit';
 import {Element} from 'react-scroll';
 import Title from '../../_components/Title';
 import Button from '../../_components/Button';
-// import Links from '../../_components/Links';
+import useOnScreen from '../../_components/useOnScreen';
 import {aboutDesc /*techStack*/} from '../../_helpers/routes';
 import './index.scss';
+// import Links from '../../_components/Links';
 
 import cv from '../../_assets/GoodnewsOgechukwuIke.pdf';
 import aboutImg from '../../_assets/images/goodnews-5.png';
 
 const About = (props) => {
+   const aboutImgRef = useRef();
+   const visible = useOnScreen(aboutImgRef, '-100px');
+
    return (
       <Element name="about">
-         <MDBContainer ref={props.ref} fluid className="__about p-0 py-3 position-relative section">
+         <MDBContainer fluid className="__about p-0 py-3 position-relative section">
             <div className="about-bg"></div>
             <MDBContainer className="__container h-100 p-0">
                <MDBRow className="m-0 py-md-5 py-3 px-lg-5 px-md-0 px-0 inner h-100 w-100 d-flex align-items-center">
                   <div className="col-md-7 col-sm-12 p-0">
                      <article className="inner img-wrapper ps-lg-5 ps-md-0 ps-0 ms-lg-5 ms-md-0 ms-0 position-relative">
-                        <div className="img">
-                           <img src={aboutImg} alt="About img" className="h-100 w-100" />
+                        <div ref={aboutImgRef} className={`img ${visible ? 'visible' : 'invisible'}`}>
+                           {visible && <img src={aboutImg} alt="About img" className="h-100 w-100" />}
                         </div>
                      </article>
                   </div>

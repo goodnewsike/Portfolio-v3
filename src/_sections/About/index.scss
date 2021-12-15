@@ -7,11 +7,20 @@
 
    .__container {
       .inner {
+         .visible {                  
+            // transform: translateX(0%);
+            opacity: 1;
+         }
+         .invisible {               
+            // transform: translateX(-200%);
+            opacity: 0;
+         }
          .about-me {
             p {
                font: 600 1rem $font;
                line-height: 1.4;
                opacity: .8;
+               transition: .5s;
             }
             .download_btn {
                a {

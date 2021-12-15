@@ -28,8 +28,8 @@ const Hero = (props) => {
       autoplaySpeed: 5000,
       cssEase: 'linear',
    };
-   const [offset, setOffset] = useState(0);
 
+   const [offset, setOffset] = useState(0);
    useEffect(() => {
       function handleScroll() {
          setOffset(window.pageYOffset);

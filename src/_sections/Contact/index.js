@@ -16,8 +16,8 @@ const Contact = (props) => {
                <Title className="align-items-center pb-1 title text-uppercase" heading="contact Me" desc="Just a Click Away" />
                <h6 className="mb-5 px-md-0 px-3 text-center">I'm available to work on your project. I'm just a click away</h6>
                <MDBRow className="m-0 inner w-100">
-                  <div className="col-md-5 col-12">
-                     <ul className="content">
+                  <div className="col-md-12 col-12">
+                     <ul className="content w-100 d-flex align-items-center justify-content-between">
                         {contactList.map((itm) => (
                            <li key={itm.id} className="mb-5 d-inline-flex align-items-center text-left">
                               <div className="icon_wrapper d-flex align-items-center justify-content-center me-4">{itm.icon}</div>
@@ -38,7 +38,7 @@ const Contact = (props) => {
                         ))}
                      </ul>
                   </div>
-                  <div className="col-md-7 col-12">
+                  {/* <div className="col-md-7 col-12">
                      <Formsy className="__form py-4 px-5">
                         <CustomInput
                            type="text"
@@ -69,7 +69,7 @@ const Contact = (props) => {
                            send message
                         </Button>
                      </Formsy>
-                  </div>
+                  </div> */}
                </MDBRow>
             </MDBContainer>
          </MDBContainer>

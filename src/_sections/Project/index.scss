@@ -7,9 +7,21 @@ Hero
 */
 
 .__projects {
-   height: 30%;
-   background: $primary-1;
    color: $white;
+   width: 100%;
+   background: $primary-1 !important;
+   overflow: hidden;
+   
+   .bg-img {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      
+      img {
+         object-fit: cover;
+      }
+   }
 
    .__container {
       .inner {
@@ -17,6 +29,7 @@ Hero
             color: $white;
          }
          .projects-section {
+            height: 42.5rem;
             .content {
                margin-bottom: 6rem !important;
 
@@ -150,6 +163,7 @@ Hero
          }
 
          .other-projects {
+            height: 52.6875rem;
             .contents {
                .inner {
                   height: 20rem;

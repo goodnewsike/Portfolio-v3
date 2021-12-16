@@ -9,15 +9,14 @@ import './index.scss';
 
 import cv from '../../_assets/GoodnewsOgechukwuIke.pdf';
 import aboutImg from '../../_assets/images/goodnews-5.png';
+import {Fade} from 'react-reveal';
 
 const About = (props) => {
    const aboutImgRef = useRef();
-   const visibleImg = useOnScreen(aboutImgRef, '-200px');
+   const visibleImg = useOnScreen(aboutImgRef, '-100px');
 
-   // const descRef = useRef();
-   // const visibleDesc = useOnScreen(descRef, '-200px');
-   // const visibleTitle = useOnScreen(descRef, '-200px');
-   // const visibleBtn = useOnScreen(descRef, '-200px');
+   const descRef = useRef();
+   const visibleDesc = useOnScreen(descRef, '-100px');
 
    return (
       <Element name="about">
@@ -32,16 +31,28 @@ const About = (props) => {
                         </div>
                      </article>
                   </div>
-                  <div ref={aboutImgRef} className="col-md-5 col-sm-12 p-0 py-md-0 py-4">
+                  <div ref={descRef} className="col-md-5 col-sm-12 p-0 py-md-0 py-4">
                      <article className="about-me d-flex pe-lg-5 pe-md-0 pe-0 px-md-0 px-0 flex-column align-items-start">
-                        {visibleImg && <Title heading="about me" desc="Who I am" />}
+                        {visibleDesc && (
+                           <Fade top duration={2500}>
+                              <Title className={`title ${visibleDesc ? 'visible' : 'invisible'}`} heading="about me" desc="Who I am" />
+                           </Fade>
+                        )}
                         {aboutDesc.map((props) => (
-                           <p key={props.id} className="py-2 mb-2">
-                              {visibleImg && props.paragraph}
+                           <p key={props.id} className={`py-2 mb-2 ${visibleDesc ? 'visible' : 'invisible'}`}>
+                              {visibleDesc && <span className="">{props.paragraph}</span>}
                            </p>
                         ))}
-                        {visibleImg && (
-                           <Button btnClassName="mt-3 download_btn" type="file" fileClassName="download_cv" fileName={cv} fileTitle="download cV" />
+                        {visibleDesc && (
+                           <Fade right duration={2500}>
+                              <Button
+                                 btnClassName={`mt-3 download_btn ${visibleDesc ? 'visible' : 'invisible'}`}
+                                 type="file"
+                                 fileClassName="download_cv"
+                                 fileName={cv}
+                                 fileTitle="download cV"
+                              />
+                           </Fade>
                         )}
                      </article>
                   </div>

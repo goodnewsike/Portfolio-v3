@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 const Links = (props) => {
    return (
-      <Fade top cascade duration={2500} delay={3000}>
+      <Fade top cascade duration={2500}>
          <ul className={props.linksClass}>
             {props.data.map((item) => {
                return (

@@ -7,22 +7,27 @@
 
    .__container {
       .inner {
-         .visible {                  
-            // transform: translateX(0%);
-            opacity: 1;
-         }
-         .invisible {               
-            // transform: translateX(-200%);
-            opacity: 0;
-         }
          .about-me {
+            .visible {                  
+               transform: translateX(0%);
+               left: 100% !important;
+               opacity: 1;
+            }
+            .invisible {               
+               transform: translateX(100%);
+               opacity: 0;
+            }
+            .title {
+               transition: .5s;
+            }
             p {
                font: 600 1rem $font;
                line-height: 1.4;
                opacity: .8;
-               transition: .5s;
+               transition: 2s;
             }
             .download_btn {
+               transition: .5s;
                a {
                   font: 600 .95rem $font;
                   color: $white;
@@ -57,11 +62,11 @@
             border-radius: 5px;
 
             .visible {                  
-               // transform: translateX(0%);
+               transform: translateX(0%);
                opacity: 1;
             }
             .invisible {               
-               // transform: translateX(-200%);
+               transform: translateX(-100%);
                opacity: 0;
             }
             .img {

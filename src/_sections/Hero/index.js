@@ -4,13 +4,15 @@ import {Element} from 'react-scroll';
 import {Fade} from 'react-reveal';
 import SocialLinks from '../../_components/SocialLinks';
 import Slider from 'react-slick';
+import useOnScreen from '../../_components/useOnScreen';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import './index.scss';
 
 // import profileImg from '../../_assets/images/goodnews-3.png';
 import img1 from '../../_assets/images/laptop-1.jpg';
 import img2 from '../../_assets/images/goodnews-6.jpg';
 import img3 from '../../_assets/images/code.jpg';
-import useOnScreen from '../../_components/useOnScreen';
 
 const Hero = (props) => {
    const img = [
@@ -46,6 +48,10 @@ const Hero = (props) => {
    const introRef = useRef();
    const visible = useOnScreen(introRef, '-100px');
 
+   useEffect(() => {
+      Aos.init({duration: 2000});
+   }, []);
+
    return (
       <Element name="hero">
          <MDBContainer fluid className="hero p-0 position-relative section">
@@ -66,7 +72,14 @@ const Hero = (props) => {
             </Slider>
             <MDBContainer fluid className="__container h-100 position-absolute d-flex align-items-center justify-content-center">
                <MDBContainer className="d-flex align-items-center justify-content-center">
-                  <MDBRow ref={introRef} className="m-0 content">
+                  <MDBRow className="m-0 content">
+                     <article className="inner d-flex flex-column align-items-center justify-content-center">
+                        <h1 className="py-2">I'm Goodnews Ike</h1>
+                        <p data-aos="fade-up" className="pb-4">Frontend Developer | React.js</p>
+                        <SocialLinks socialClass="social-links" linksClass="links" />
+                     </article>
+                  </MDBRow>
+                  {/* <MDBRow ref={introRef} className="m-0 content">
                      <article className="inner d-flex flex-column align-items-center justify-content-center">
                         {visible && <h1 className="py-2">I'm Goodnews Ike</h1>}
                         <Fade top duration={2500}>
@@ -74,7 +87,7 @@ const Hero = (props) => {
                         </Fade>
                         {visible && <SocialLinks socialClass="social-links" linksClass="links" />}
                      </article>
-                  </MDBRow>
+                  </MDBRow> */}
                </MDBContainer>
             </MDBContainer>
          </MDBContainer>

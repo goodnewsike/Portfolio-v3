@@ -11,21 +11,18 @@ import './index.scss';
 // import bgImg from '../../_assets/images/projects-bg.png';
 
 const Projects = (props) => {
-   const [offset, setOffset] = useState(0);
-   useEffect(() => {
-      function handleScroll() {
-         setOffset(window.pageYOffset);
-      }
+   // const [offset, setOffset] = useState(0);
+   // useEffect(() => {
+   //    function handleScroll() {
+   //       setOffset(window.pageYOffset);
+   //    }
 
-      window.addEventListener('scroll', handleScroll);
+   //    window.addEventListener('scroll', handleScroll);
 
-      return () => {
-         window.removeEventListener('scroll', handleScroll);
-      };
-   }, [offset]);
-
-   const projectsRef = useRef();
-   const visible = useOnScreen(projectsRef, '-150px');
+   //    return () => {
+   //       window.removeEventListener('scroll', handleScroll);
+   //    };
+   // }, [offset]);
 
    return (
       <Element name="projects">

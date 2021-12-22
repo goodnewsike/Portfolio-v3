@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Links = (props) => {
    return (
@@ -24,8 +26,12 @@ const Href = (props) => {
 };
 
 const Button = ({type, ...props}) => {
+   useEffect(() => {
+      Aos.init({duration: 2000});
+   }, []);
+
    return (
-      <button type={props.btnStyle} className={props.btnClassName} onClick={props.onClick} disabled={props.disabled}>
+      <button data-aos="fade-up" type={props.btnStyle} className={props.btnClassName} onClick={props.onClick} disabled={props.disabled}>
          {type === 'link' && <Links {...props} />}
          {type === 'file' && <Files {...props} />}
          {type === 'href' && <Href {...props} />}

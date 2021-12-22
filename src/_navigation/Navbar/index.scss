@@ -18,16 +18,19 @@
    }
 
    &:hover .__collapse .__navbar .__nav-links {
-      color: $white !important;
+      // color: $white !important;
+      color: $primary-8;
    }
    &:hover .__container .__nav-brand {
-      color: $white !important;
-      border-color: $white;
+      // color: $white !important;
+      color: $primary-8;
+      border-color: $primary-8;
    }
 
    .__container {
       .__nav-brand {
-         color: $black;
+         // color: $black;
+         color: $primary-8;
          border: 2px solid $primary-3;
          border-radius: 10px;
          height: 2.5rem;
@@ -43,16 +46,12 @@
       .__nav-toggle-icon {
          background-image: none !important;
       }
-      .page_name {
-         color: $primary-1;
-         font-size: 1.1rem;
-         font-family: $font;
-      }
       .__collapse {
          .__navbar {
             .__nav-links {
                font: 600 1rem $font;
-               color: $black;
+               // color: $black;
+               color: $primary-8;
                margin: 0 .5rem;
                transition: $transition2;
 

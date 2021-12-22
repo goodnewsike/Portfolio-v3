@@ -11,6 +11,7 @@ Hero
    width: 100%;
    background: $primary-1 !important;
    overflow: hidden;
+   height: 100%;
    
    .bg-img {
       top: 0;
@@ -29,7 +30,8 @@ Hero
             color: $white;
          }
          .projects-section {
-            height: 42.5rem;
+            // height: 42.5rem;
+            height: 100;
             .content {
                margin-bottom: 6rem !important;
 
@@ -163,7 +165,8 @@ Hero
          }
 
          .other-projects {
-            height: 52.6875rem;
+            // height: 52.6875rem;
+            height: 100%;
             .contents {
                .inner {
                   height: 20rem;

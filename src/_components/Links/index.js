@@ -11,10 +11,10 @@ const Links = (props) => {
 
    return (
       <>
-         <ul className={props.linksClass}>
+         <ul data-aos="fade-up" className={props.linksClass}>
             {props.data.map((item) => {
                return (
-                  <li data-aos="fade-up" key={item.id} className={`d-flex align-items-center justify-content-center ${props.liClass && props.liClass}`}>
+                  <li key={item.id} className={`d-flex align-items-center justify-content-center ${props.liClass && props.liClass}`}>
                      {item.url && (
                         <Link to={item.url} className="d-flex align-items-center justify-content-center">
                            {item.icon}

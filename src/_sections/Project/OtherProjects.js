@@ -19,7 +19,9 @@ const OtherProjects = (props) => {
                <div className="inner position-relative">
                   <div className="img d-flex align-items-center justify-content-center">
                      {/* {props.projectImg ? <img src={props.projectImg} alt="" className="" /> : <span className="">&lt;/&gt;</span>} */}
-                     <span data-aos="zoom-in" className="text-uppercase text-center">{props.title}</span>
+                     <span data-aos="zoom-in" className="text-uppercase text-center">
+                        {props.title}
+                     </span>
                   </div>
                   <div data-aos="fade-up" className="description h-100 p-4 position-absolute d-flex align-items-center justify-content-center">
                      <div className="position-relative">

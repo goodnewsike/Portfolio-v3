@@ -46,7 +46,7 @@ const Projects = (props) => {
                         return <Project key={p.id} {...p} />;
                      })}
                   </div>
-                  <div className="other-projects d-flex flex-column align-items-center justify-content-center position-relative">
+                  <div className="other-projects px-lg-0 px-5 d-flex flex-column align-items-center justify-content-center position-relative">
                      <Title className="align-items-center pb-4 title" heading="other projects" desc="More on projects" />
                      <div className="row m-0 contents w-100">
                         {otherProjects.map((prop) => (

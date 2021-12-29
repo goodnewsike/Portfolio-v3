@@ -205,26 +205,66 @@ export const experienceLists = [
          },
       ],
    },
-   // {
-   //    id: 3,
-   //    title: 'Frontend',
-   //    company: 'Zyonel Technologies',
-   //    duration: 'August 2021 - Present',
-   //    desc: [
-   //       {
-   //          id: 1,
-   //          activities: 'Write maintainable and reuseable codes for different projects.',
-   //       },
-   //       {
-   //          id: 2,
-   //          activities: 'Work with a team of designers and developers to build a commercial, educative and entertainment web applications.',
-   //       },
-   //       {
-   //          id: 3,
-   //          activities: 'Work with Javascript framework (React.js) with predictable state manager (Redux).',
-   //       },
-   //    ],
-   // },
+   {
+      id: 3,
+      title: 'Frontend',
+      company: 'Zyonel Technologies',
+      duration: 'August 2021 - Present',
+      desc: [
+         {
+            id: 1,
+            activities: 'Write maintainable and reuseable codes for different projects.',
+         },
+         {
+            id: 2,
+            activities: 'Work with a team of designers and developers to build a commercial, educative and entertainment web applications.',
+         },
+         {
+            id: 3,
+            activities: 'Work with Javascript framework (React.js) with predictable state manager (Redux).',
+         },
+      ],
+   },
+   {
+      id: 3,
+      title: 'Frontend',
+      company: 'Zyonel Technologies',
+      duration: 'August 2021 - Present',
+      desc: [
+         {
+            id: 1,
+            activities: 'Write maintainable and reuseable codes for different projects.',
+         },
+         {
+            id: 2,
+            activities: 'Work with a team of designers and developers to build a commercial, educative and entertainment web applications.',
+         },
+         {
+            id: 3,
+            activities: 'Work with Javascript framework (React.js) with predictable state manager (Redux).',
+         },
+      ],
+   },
+   {
+      id: 3,
+      title: 'Frontend',
+      company: 'Zyonel Technologies',
+      duration: 'August 2021 - Present',
+      desc: [
+         {
+            id: 1,
+            activities: 'Write maintainable and reuseable codes for different projects.',
+         },
+         {
+            id: 2,
+            activities: 'Work with a team of designers and developers to build a commercial, educative and entertainment web applications.',
+         },
+         {
+            id: 3,
+            activities: 'Work with Javascript framework (React.js) with predictable state manager (Redux).',
+         },
+      ],
+   },
 ];
 
 export const contactList = [

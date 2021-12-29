@@ -25,30 +25,30 @@ const Contact = (props) => {
          <MDBContainer fluid className="__contact p-0 py-5 position-relative section">
             <MDBContainer className="p-0 __container h-100 d-flex flex-column align-items-center justify-content-center position-relative">
                <Title className="align-items-center pb-1 title text-uppercase" heading="contact Me" desc="Just a Click Away" />
-               <h6 data-aos="zoom-in-up" className="mb-5 px-md-0 px-3 text-center">I'm available to work on your project. I'm just a click away</h6>
+               <h6 data-aos="zoom-in-up" className="mb-5 px-md-0 px-3 text-center">
+                  I'm available to work on your project. I'm just a click away
+               </h6>
                <MDBRow className="m-0 inner w-100">
-                  <div className="col-md-12 col-12">
-                     <ul className="content w-100 d-flex align-items-center justify-content-between">
-                        {contactList.map((itm) => (
-                           <li data-aos="zoom-in-up" key={itm.id} className="mb-5 d-inline-flex align-items-center text-left">
-                              <div className="icon_wrapper d-flex align-items-center justify-content-center me-4">{itm.icon}</div>
-                              <span className="">
-                                 {itm.email ? (
-                                    <a href={`mailto:${itm.email}`} className="">
-                                       {itm.email}
-                                    </a>
-                                 ) : itm.phone ? (
-                                    <a href={`tel:${itm.phone}`} className="">
-                                       {itm.phone}
-                                    </a>
-                                 ) : (
-                                    itm.item
-                                 )}
-                              </span>
-                           </li>
-                        ))}
-                     </ul>
-                  </div>
+                  <ul className="content d-flex flex-column flex-md-row align-items-center justify-content-md-evenly justify-content-start">
+                     {contactList.map((itm) => (
+                        <li data-aos="zoom-in-up" key={itm.id} className="mb-5 d-flex align-items-center">
+                           <div className="icon_wrapper d-flex align-items-center justify-content-center me-4">{itm.icon}</div>
+                           <span className="">
+                              {itm.email ? (
+                                 <a href={`mailto:${itm.email}`} className="">
+                                    {itm.email}
+                                 </a>
+                              ) : itm.phone ? (
+                                 <a href={`tel:${itm.phone}`} className="">
+                                    {itm.phone}
+                                 </a>
+                              ) : (
+                                 itm.item
+                              )}
+                           </span>
+                        </li>
+                     ))}
+                  </ul>
                </MDBRow>
             </MDBContainer>
          </MDBContainer>

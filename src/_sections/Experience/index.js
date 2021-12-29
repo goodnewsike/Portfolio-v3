@@ -29,8 +29,10 @@ const Experience = (props) => {
             <div className="img position-absolute">{/* <img src={bgImg} alt="" className="h-100 w-100" /> */}</div>
             <MDBContainer className="p-0 __container py-5 mb-5 h-100 d-flex align-items-center justify-content-center flex-column">
                <Title className="align-items-center pb-4 title" heading="my experience" desc="Where I've worked" />
-               <div className="m-0 inner d-flex align-items-start justify-content-center">
-                  <ul data-aos="fade-up-right" className="tabs me-4">
+               <div className="row m-0 inner d-flex align-items-start justify-content-center">
+                  <ul
+                     data-aos="fade-up-right"
+                     className="tabs col-md-3 col-12 p-0 pe-md-4 pe-0 mb-md-0 mb-4 position-relative d-flex flex-nowrap overflow-x-md-hidden overflow-x-scroll flex-md-column flex-row justify-content-start">
                      {experienceLists.map((itm, i) => (
                         <li
                            // data-aos="fade-up-right"
@@ -43,7 +45,7 @@ const Experience = (props) => {
                         </li>
                      ))}
                   </ul>
-                  <div key={id} className="description">
+                  <div key={id} className="description col-md-9 col-12 p-0">
                      <h4 data-aos="fade-up" className="mb-2">
                         {title}
                      </h4>

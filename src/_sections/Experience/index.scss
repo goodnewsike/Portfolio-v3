@@ -23,12 +23,7 @@
          max-width: 900px;
 
          ul.tabs {
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
             margin-bottom: 4rem;
-            flex-wrap: wrap;
-            position: relative;
 
             &::before {
                position: absolute;
@@ -65,13 +60,6 @@
                }
             }
          }
-         @media screen and (max-width: 767px) {
-            ul.tabs {
-               flex-direction: column;
-               justify-content: flex-start;
-            }
-         }
-
          .description {
             h4 {
                font: 700 1.2rem $font;

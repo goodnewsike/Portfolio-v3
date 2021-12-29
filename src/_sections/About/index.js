@@ -26,8 +26,8 @@ const About = (props) => {
          <MDBContainer fluid className="__about p-0 py-3 position-relative section">
             <div className="about-bg"></div>
             <MDBContainer className="__container h-100 p-0">
-               <MDBRow className="m-0 py-md-5 py-3 px-lg-5 px-md-0 px-0 inner h-100 w-100 d-flex align-items-center">
-                  <div className="col-md-7 col-sm-12 p-0">
+               <MDBRow className="m-0 py-md-3 py-3 px-xl-3 px-lg-3 px-md-0 px-0 inner h-100 w-100 d-flex align-items-center">
+                  <div className="col-lg-7 col-md-6 col-sm-12 p-0">
                      <article className="inner img-wrapper ps-lg-5 ps-md-0 ps-0 ms-lg-5 ms-md-0 ms-0 position-relative">
                         <div data-aos="zoom-in" className="img">
                            <img src={aboutImg} alt="About img" className="h-100 w-100" />
@@ -45,7 +45,7 @@ const About = (props) => {
                         )}
                      </article>
                   </div> */}
-                  <div className="col-md-5 col-sm-12 p-0 py-md-0 py-4">
+                  <div className="col-lg-5 col-md-6 col-sm-12 p-0 py-lg-0 py-md-4 py-4 px-md-0 px-3">
                      <article className="about-me d-flex pe-lg-5 pe-md-0 pe-0 px-md-0 px-0 flex-column align-items-start">
                         <Title className="title" heading="about me" desc="Who I am" />
                         {aboutDesc.map((props) => (

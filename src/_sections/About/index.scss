@@ -116,6 +116,18 @@
                }
             }
          }
+         @media screen and (max-width: 991px) {
+            .img-wrapper {
+               height: 27rem;
+               width: 21.6rem;
+            }
+         }
+         @media screen and (max-width: 767px) {
+            .img-wrapper {
+               height: 22rem;
+               width: 17.6rem;
+            }
+         }
       }
    }
 

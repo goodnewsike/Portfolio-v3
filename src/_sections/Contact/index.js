@@ -29,7 +29,7 @@ const Contact = (props) => {
                   I'm available to work on your project. I'm just a click away
                </h6>
                <MDBRow className="m-0 inner w-100">
-                  <ul className="content d-flex flex-column flex-md-row align-items-center justify-content-md-evenly justify-content-start">
+                  <ul className="content d-flex flex-wrap flex-column flex-md-row align-items-center justify-content-md-evenly justify-content-start">
                      {contactList.map((itm) => (
                         <li data-aos="zoom-in-up" key={itm.id} className="mb-5 d-flex align-items-center">
                            <div className="icon_wrapper d-flex align-items-center justify-content-center me-4">{itm.icon}</div>

@@ -45,9 +45,6 @@ const Hero = (props) => {
       };
    }, [offset]);
 
-   const introRef = useRef();
-   const visible = useOnScreen(introRef, '-100px');
-
    useEffect(() => {
       Aos.init({duration: 2000});
    }, []);
@@ -75,19 +72,12 @@ const Hero = (props) => {
                   <MDBRow className="m-0 content">
                      <article className="inner d-flex flex-column align-items-center justify-content-center">
                         <h1 className="py-2">I'm Goodnews Ike</h1>
-                        <p data-aos="fade-up" className="pb-4">Frontend Developer | React.js</p>
+                        <p data-aos="fade-up" className="pb-4">
+                           Frontend Developer | React.js
+                        </p>
                         <SocialLinks socialClass="social-links" linksClass="links" />
                      </article>
                   </MDBRow>
-                  {/* <MDBRow ref={introRef} className="m-0 content">
-                     <article className="inner d-flex flex-column align-items-center justify-content-center">
-                        {visible && <h1 className="py-2">I'm Goodnews Ike</h1>}
-                        <Fade top duration={2500}>
-                           {visible && <p className="pb-4">Frontend Developer | React.js</p>}
-                        </Fade>
-                        {visible && <SocialLinks socialClass="social-links" linksClass="links" />}
-                     </article>
-                  </MDBRow> */}
                </MDBContainer>
             </MDBContainer>
          </MDBContainer>

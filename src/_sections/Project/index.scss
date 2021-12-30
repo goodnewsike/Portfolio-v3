@@ -30,8 +30,6 @@ Hero
             color: $white;
          }
          .projects-section {
-            // height: 42.5rem;
-            height: 100;
             .content {
                margin-bottom: 6rem !important;
 
@@ -58,7 +56,7 @@ Hero
                }
                .project-info {
                   z-index: 20;
-                  span {
+                  .featured-project {
                      font-size: .85rem;
                      opacity: .8;
                   }
@@ -133,7 +131,7 @@ Hero
                      text-align: left;
                      padding-left: 1rem;
                      padding-right: 1rem;
-                     color: $primary-2;
+                     color: #fff;
                      position: absolute;
                      top: 0;
                      right: 0;
@@ -142,10 +140,11 @@ Hero
                      display: flex;
                      flex-direction: column;
                      justify-content: center;
-                     background: rgba(255, 255, 255, .6);
+                     background: rgba(0, 0, 0, .65);
 
-                     span {
+                     .featured-project {
                         padding-left: 1rem;
+                        opacity: 1;
                      }
 
                      h4 {
@@ -158,6 +157,12 @@ Hero
                      .project-desc {
                         background: none;
                         box-shadow: none;
+                        color: #fff;
+                     }
+                     .project-stack {
+                        span {
+                           opacity: 1;
+                        }
                      }
                   }
                }

@@ -58,6 +58,13 @@
             }
          }
 
+         @media screen and (max-width: 767px) {
+            .about-me {
+               padding-top: 6rem;
+               padding-bottom: 2rem;
+            }
+         }
+
          .img-wrapper {
             height: 35rem;
             width: 28rem;
@@ -126,6 +133,7 @@
             .img-wrapper {
                height: 22rem;
                width: 17.6rem;
+               padding-top: 2rem;
             }
          }
       }

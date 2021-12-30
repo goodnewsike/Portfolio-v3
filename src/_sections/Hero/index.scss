@@ -128,6 +128,13 @@
       }
    }
 }
+
+@media screen and (max-width: 992px) {
+   .hero {
+      height: 70vh;
+   }
+}
+
 /* The typing effect */
 @keyframes textTyping {
    0% {

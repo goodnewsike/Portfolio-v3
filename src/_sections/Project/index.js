@@ -41,12 +41,12 @@ const Projects = (props) => {
             <MDBContainer className="p-0 __container h-100 d-flex align-items-center justify-content-center position-relative">
                <MDBRow className="m-0 inner w-100">
                   <Title className="align-items-center pb-4 title" heading="my projects" desc="What I've worked on" />
-                  <div className="projects-section">
+                  <div className="projects-section px-md-0">
                      {projects.map((p) => {
                         return <Project key={p.id} {...p} />;
                      })}
                   </div>
-                  <div className="other-projects px-lg-0 px-5 d-flex flex-column align-items-center justify-content-center position-relative">
+                  <div className="other-projects px-xl-5 px-0 d-flex flex-column align-items-center justify-content-center position-relative">
                      <Title className="align-items-center pb-4 title" heading="other projects" desc="More on projects" />
                      <div className="row m-0 contents w-100">
                         {otherProjects.map((prop) => (

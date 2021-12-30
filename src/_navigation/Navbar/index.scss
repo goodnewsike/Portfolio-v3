@@ -13,23 +13,18 @@
       height: 6rem;
       backdrop-filter: blur(13px);
       background: transparent;
-      // background: #bbb;
-      // box-shadow: $box-shadow22;
    }
 
    &:hover .__collapse .__navbar .__nav-links {
-      // color: $white !important;
       color: $primary-8;
    }
    &:hover .__container .__nav-brand {
-      // color: $white !important;
       color: $primary-8;
       border-color: $primary-8;
    }
 
    .__container {
       .__nav-brand {
-         // color: $black;
          color: $primary-8;
          border: 2px solid $primary-3;
          border-radius: 10px;
@@ -43,6 +38,11 @@
             transition: $transition2;
          }
       }
+      @media screen and (max-width: 575px) {
+         .__nav-brand {
+            margin-left: 1rem !important;
+         }
+      }
       .__nav-toggle-icon {
          background-image: none !important;
       }
@@ -50,7 +50,6 @@
          .__navbar {
             .__nav-links {
                font: 600 1rem $font;
-               // color: $black;
                color: $primary-8;
                margin: 0 .5rem;
                transition: $transition2;
@@ -79,24 +78,26 @@
             }
          }
       }
-      // @media screen and (max-width: 992px) {
-      //    .__collapse {
-      //       display: flex;
-      //       align-items: center;
-      //       justify-content: center;
-      //       margin-top: .6rem;
-      //       background: #bbb;
-      //       height: 60vh !important;
+      @media screen and (max-width: 1199px) {
+         .__collapse-screen {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: .6rem;
+            border-radius: 8px;
+            background: #bbb;
+            // height: 60vh !important;
+            height: 100% !important;
 
-      //       .__navbar {
-      //          height: 100%;
-      //          margin-left: 0 !important;
+            .__navbar {
+               height: 100%;
+               margin-left: 0 !important;
 
-      //          .nav-item {
-      //             padding: 1rem 0;
-      //          }
-      //       }
-      //    }
-      // }
+               .nav-item {
+                  padding: 1rem 0;
+               }
+            }
+         }
+      }
    }
 }

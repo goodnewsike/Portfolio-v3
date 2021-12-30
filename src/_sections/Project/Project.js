@@ -42,7 +42,10 @@ const Project = (props) => {
                   {props.stack &&
                      props.stack.map((item) => {
                         return (
-                           <span data-aos="fade-up" key={item.id} className={props.id % 2 === 0 ? `d-inline-block ps-md-0 ps-3` : 'd-inline-block ps-3'}>
+                           <span
+                              data-aos="fade-up"
+                              key={item.id}
+                              className={props.id % 2 === 0 ? `d-inline-block ps-md-0 ps-3` : 'd-inline-block ps-3'}>
                               {item.title}
                            </span>
                         );

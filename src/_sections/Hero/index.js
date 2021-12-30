@@ -1,10 +1,8 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {MDBContainer, MDBRow} from 'mdb-react-ui-kit';
 import {Element} from 'react-scroll';
-import {Fade} from 'react-reveal';
 import SocialLinks from '../../_components/SocialLinks';
 import Slider from 'react-slick';
-import useOnScreen from '../../_components/useOnScreen';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './index.scss';
@@ -71,6 +69,9 @@ const Hero = (props) => {
                <MDBContainer className="d-flex align-items-center justify-content-center">
                   <MDBRow className="m-0 content">
                      <article className="inner d-flex flex-column align-items-center justify-content-center">
+                        {/* <div className="profile-img">
+                           <img src="" alt="" className="h-100 w-100" />
+                        </div> */}
                         <h1 className="py-2">I'm Goodnews Ike</h1>
                         <p data-aos="fade-up" className="pb-4">
                            Frontend Developer | React.js

@@ -8,10 +8,10 @@ import MenuButton from '../../_components/MenuButton';
 import {navbarLinks} from '../../_helpers/routes';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-// import Button from '../../_components/Button';
+import Button from '../../_components/Button';
 import './index.scss';
 
-// import cv from '../../_assets/GoodnewsOgechukwuIke.pdf';
+import cv from '../../_assets/GoodnewsOgechukwuIke.pdf';
 
 function Navbar(props) {
    const code = useLocationCode();
@@ -51,7 +51,7 @@ function Navbar(props) {
                <MenuButton open={showBasic} className="__nav-toggle-icon" />
             </MDBNavbarToggler>
 
-            <MDBCollapse className={showBasic ? 'w-auto __collapse __collapse-screen' : 'w-auto __collapse'} navbar show={showBasic}>
+            <MDBCollapse className={showBasic ? 'w-auto __collapse __collapse-screen p-4 transform' : 'w-auto __collapse'} navbar show={showBasic}>
                <MDBNavbarNav tag="div" className="__navbar ms-auto w-auto mb-2 mb-lg-0 d-flex align-items-center position-relative">
                   {navbarLinks.map((links, i) => (
                      <MDBNavbarItem className="me-3" key={i}>
@@ -64,7 +64,6 @@ function Navbar(props) {
                                  tab: links.tab,
                               },
                            }}
-                           // onClick={props.onClick}
                            onClick={hideShowBasic}
                            className={classNames('__nav-links', {
                               active: code === links.tab,
@@ -73,9 +72,15 @@ function Navbar(props) {
                         </Link>
                      </MDBNavbarItem>
                   ))}
-                  {/* <Fade left duration={2000} delay={1000}>
-                     <Button btnClassName="align-middle download_btn" type="file" fileClassName="download_cv" fileName={cv} fileTitle="download cV" />
-                  </Fade> */}
+                  {showBasic && (
+                     <Button
+                        btnClassName="align-middle download_btn mt-4"
+                        type="file"
+                        fileClassName="download_cv"
+                        fileName={cv}
+                        fileTitle="download cV"
+                     />
+                  )}
                </MDBNavbarNav>
             </MDBCollapse>
          </MDBContainer>

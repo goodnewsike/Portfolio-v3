@@ -7,6 +7,7 @@ import {ReactComponent as PhoneIcon} from '../_assets/icons/phone.svg';
 import project1 from '../_assets/images/expense-reactjs.png';
 import project2 from '../_assets/images/uba.jpg';
 import project3 from '../_assets/images/food-website.jpg';
+import project4 from '../_assets/images/realty-1.png';
 import projectImg from '../_assets/images/projects-3.jpg';
 
 export const socialLinks = [
@@ -328,6 +329,39 @@ export const techStack = [
 export const projects = [
    {
       id: 1,
+      image: project4,
+      title: `Home Ecommerce App`,
+      description:
+         'This ecommerce project built by me is currently under production. It is meant to display homes and furniture for sale across states on one platform, and display interior decorations for homes as well.',
+      githubLink: `https://github.com/goodnewsike/home-eccommerce-app`,
+      githubIcon: <FiGithub className="project-icon" />,
+      extUrl: `https://home-ecommerce-app.netlify.app`,
+      extUrlIcon: <FiExternalLink className="project-icon" />,
+      stack: [
+         {
+            id: 1,
+            title: 'React',
+         },
+         {
+            id: 2,
+            title: 'Redux',
+         },
+         {
+            id: 3,
+            title: 'Netlify',
+         },
+         {
+            id: 4,
+            title: 'Bootstrap',
+         },
+         {
+            id: 5,
+            title: 'Sass',
+         },
+      ],
+   },
+   {
+      id: 2,
       image: project1,
       title: `expense tracker`,
       description:
@@ -352,7 +386,7 @@ export const projects = [
       ],
    },
    {
-      id: 2,
+      id: 3,
       image: project2,
       title: `UBA website clone`,
       description: 'A five page UBA website clone that shows information about the website, fully responsive.',
@@ -379,52 +413,27 @@ export const projects = [
          },
       ],
    },
-   {
-      id: 3,
-      image: project3,
-      title: `Responsive Landing Page`,
-      description: 'A landing page with animations to display information of a food vendor',
-      githubLink: `https://github.com/goodnewsike/Mobile-first-responsive-website.`,
-      githubIcon: <FiGithub className="project-icon" />,
-      extUrl: `https://food-landing-sample.netlify.app`,
-      extUrlIcon: <FiExternalLink className="project-icon" />,
-      stack: [
-         {
-            id: 1,
-            title: 'HTML',
-         },
-         {
-            id: 2,
-            title: 'CSS',
-         },
-         {
-            id: 3,
-            title: 'Scroll-reveal',
-         },
-      ],
-   },
    // {
-   //    id: 4,
-   //    image: `/projects-3.jpg`,
-   //    title: `just project title`,
-   //    description:
-   //       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod quis rerum ipsa repellendus in quaerat fuga illo, quae eos, animi quibusdam aspernatur possimus? Beatae quas eos dolorum vel repellendus.',
-   //    githubLink: `https://github.com/`,
+   //    id: 3,
+   //    image: project3,
+   //    title: `Responsive Landing Page`,
+   //    description: 'A landing page with animations to display information of a food vendor',
+   //    githubLink: `https://github.com/goodnewsike/Mobile-first-responsive-website.`,
    //    githubIcon: <FiGithub className="project-icon" />,
-   //    extUrl: `https://google.com`,
+   //    extUrl: `https://food-landing-sample.netlify.app`,
    //    extUrlIcon: <FiExternalLink className="project-icon" />,
    //    stack: [
    //       {
    //          id: 1,
-   //          title: 'gatsby',
+   //          title: 'HTML',
    //       },
    //       {
    //          id: 2,
-   //          title: 'bootstrap',
+   //          title: 'CSS',
    //       },
    //       {
    //          id: 3,
-   //          title: 'material ui',
+   //          title: 'Scroll-reveal',
    //       },
    //    ],
    // },

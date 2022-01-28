@@ -8,7 +8,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './index.scss';
 
-import cv from '../../_assets/GoodnewsOgechukwuIke.pdf';
+import cv from '../../_assets/Goodnews-Ogechukwu-Ike-Resume.pdf';
 import aboutImg from '../../_assets/images/goodnews-5.png';
 
 const About = (props) => {

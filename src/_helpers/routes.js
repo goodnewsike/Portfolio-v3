@@ -1,4 +1,5 @@
-import {FaFacebook, FaGithub, FaLinkedinIn, FaInstagram, FaHtml5, FaCss3Alt, FaReact, FaWindows, FaBootstrap} from 'react-icons/fa';
+import {FaFacebook, FaGithub, FaLinkedinIn, FaInstagram, FaHtml5, FaCss3Alt, FaReact, FaWindows, FaBootstrap, FaNodeJs} from 'react-icons/fa';
+import {SiMongodb} from 'react-icons/si';
 import {FiGithub, FiExternalLink} from 'react-icons/fi';
 import {ReactComponent as ResponsiveIcon} from '../_assets/icons/responsive.svg';
 import {ReactComponent as LocationIcon} from '../_assets/icons/location.svg';
@@ -6,7 +7,6 @@ import {ReactComponent as EmailIcon} from '../_assets/icons/email.svg';
 import {ReactComponent as PhoneIcon} from '../_assets/icons/phone.svg';
 import project1 from '../_assets/images/expense-reactjs.png';
 import project2 from '../_assets/images/uba.jpg';
-import project3 from '../_assets/images/food-website.jpg';
 import project4 from '../_assets/images/realty-1.png';
 import projectImg from '../_assets/images/projects-3.jpg';
 
@@ -147,50 +147,12 @@ export const services = [
    // },
 ];
 
-// export const experienceTabs = [
-//    {
-//       id: 1,
-//       activeTab: 1,
-//       name: 'zyonel technologies',
-//    },
-//    {
-//       id: 2,
-//       activeTab: 2,
-//       name: 'lorem ipsum ipsum',
-//    },
-//    {
-//       id: 3,
-//       activeTab: 3,
-//       name: 'lorem ipsum',
-//    },
-// ];
-
 export const experienceLists = [
    {
       id: 1,
       title: 'Frontend Developer Intern',
       company: 'Zyonel Technologies',
-      duration: 'August 2021 - Present',
-      desc: [
-         {
-            id: 1,
-            activities: 'Write maintainable and reuseable codes for different projects.',
-         },
-         {
-            id: 2,
-            activities: 'Work with a team of designers and developers to build a commercial, educative and entertainment web applications.',
-         },
-         {
-            id: 3,
-            activities: 'Work with Javascript framework (React.js) with predictable state manager (Redux).',
-         },
-      ],
-   },
-   {
-      id: 2,
-      title: 'Frontend Software',
-      company: 'Zyonel ',
-      duration: 'August 2021 - Present',
+      duration: 'August 2021 - January 2022',
       desc: [
          {
             id: 1,
@@ -207,29 +169,9 @@ export const experienceLists = [
       ],
    },
    // {
-   //    id: 3,
-   //    title: 'Frontend',
-   //    company: 'Zyonel Technologies',
-   //    duration: 'August 2021 - Present',
-   //    desc: [
-   //       {
-   //          id: 1,
-   //          activities: 'Write maintainable and reuseable codes for different projects.',
-   //       },
-   //       {
-   //          id: 2,
-   //          activities: 'Work with a team of designers and developers to build a commercial, educative and entertainment web applications.',
-   //       },
-   //       {
-   //          id: 3,
-   //          activities: 'Work with Javascript framework (React.js) with predictable state manager (Redux).',
-   //       },
-   //    ],
-   // },
-   // {
-   //    id: 3,
-   //    title: 'Frontend',
-   //    company: 'Zyonel Technologies',
+   //    id: 2,
+   //    title: 'Frontend Software',
+   //    company: 'Zyonel ',
    //    duration: 'August 2021 - Present',
    //    desc: [
    //       {
@@ -317,7 +259,17 @@ export const techStack = [
    {
       id: 6,
       stackIcon: <FaReact className="stack-icon" />,
-      stackName: 'ReactJS',
+      stackName: 'ReactJs',
+   },
+   {
+      id: 6,
+      stackIcon: <FaNodeJs className="stack-icon" />,
+      stackName: 'NodeJs',
+   },
+   {
+      id: 6,
+      stackIcon: <SiMongodb className="stack-icon" />,
+      stackName: 'MongoDB',
    },
    {
       id: 7,

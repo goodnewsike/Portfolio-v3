@@ -11,7 +11,7 @@ import 'aos/dist/aos.css';
 import Button from '../../_components/Button';
 import './index.scss';
 
-import cv from '../../_assets/GoodnewsOgechukwuIke.pdf';
+import cv from '../../_assets/Goodnews-Ogechukwu-Ike-Resume.pdf';
 
 function Navbar(props) {
    const code = useLocationCode();
